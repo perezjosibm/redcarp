@@ -1,0 +1,33 @@
+{
+  "input": [
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_143712.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_144244.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_144816.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_145349.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_145921.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_150454.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_151026.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_151558.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_152131.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_152703.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_153236.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_153808.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_154340.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_154913.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_155445.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_160018.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_160551.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_161123.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_161656.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_162228.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_162801.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_163333.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_163906.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250627_164438.json"
+  ],
+  "output": "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqwrite.json"
+}

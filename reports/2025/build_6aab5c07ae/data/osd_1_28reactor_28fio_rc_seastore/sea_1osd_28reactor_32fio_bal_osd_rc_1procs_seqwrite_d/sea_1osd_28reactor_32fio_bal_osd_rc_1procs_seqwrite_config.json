@@ -1,0 +1,10 @@
+{
+  "input": [
+    "sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_before.json",
+    "sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_after.json"
+  ],
+  "output": "sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqwrite_perf.json",
+  "type": "crimson",
+  "operator": "difference",
+  "benchmark": "sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqwrite.json"
+}

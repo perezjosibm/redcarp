@@ -1,0 +1,34 @@
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & iops & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+1  & 462.66  & 20688.00  & 68.79  & 1718.76  & 0.01  & 0.01  & 0.00  & 0.00  & 2.35  & 9.00 \\
+\hline
+2  & 6974.29  & 347787.00  & 9.12  & 542.11  & 0.14  & 0.10  & 0.00  & 0.00  & 39.02  & 22.50 \\
+\hline
+4  & 3540.54  & 131.00  & 17200.65  & 20133.63  & 0.00  & 0.00  & 0.00  & 0.00  & 7.46  & 0.00 \\
+\hline
+8  & 12089.40  & 723780.00  & 21.07  & 838.38  & 0.23  & 0.16  & 0.00  & 0.00  & 66.76  & 29.49 \\
+\hline
+16  & 14523.08  & 1014684.00  & 34.72  & 1103.52  & 0.27  & 0.19  & 0.00  & 0.00  & 86.23  & 34.50 \\
+\hline
+24  & 21568.72  & 2369475.00  & 10.10  & 508.13  & 1.34  & 0.96  & 0.00  & 0.00  & 177.59  & 17.07 \\
+\hline
+32  & 8.41  & 419.00  & 35309.91  & 22885.21  & 0.00  & 0.00  & 0.00  & 0.00  & 7.28  & 0.85 \\
+\hline
+40  & 191.32  & 9529.00  & 5953.88  & 16170.11  & 0.01  & 0.00  & 0.00  & 0.00  & 9.61  & 1.50 \\
+\hline
+52  & 6594.02  & 1543.00  & 316.35  & 406.43  & 0.12  & 0.10  & 0.00  & 0.00  & 8.48  & 0.00 \\
+\hline
+64  & 6062.91  & 2795.00  & 436.46  & 599.57  & 0.14  & 0.13  & 0.00  & 0.00  & 10.15  & 1.50 \\
+\hline
+
+\hline
+\end{tabular}
+  \caption{Performance Throughput vs Latency vs CPU util: random write 4k, single reactor per CPU core.}
+  %sea_1osd_28reactor_32fio_bal_osd_rc_1procs_randwrite.}
+\label{table:iops-lat-cpu-sea_1osd_28reactor_32fio_bal_osd_rc_1procs_randwrite}
+\end{table}

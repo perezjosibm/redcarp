@@ -1,0 +1,31 @@
+{
+  "input": [
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_175125.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_175657.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_180229.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_180802.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_181334.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_181907.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_182439.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_183012.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_183544.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_184116.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_184649.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_185222.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_185754.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_190327.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_190900.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_191432.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_192004.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_192537.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_193110.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_193642.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_194215.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250625_194747.json"
+  ],
+  "output": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_seqwrite.json"
+}

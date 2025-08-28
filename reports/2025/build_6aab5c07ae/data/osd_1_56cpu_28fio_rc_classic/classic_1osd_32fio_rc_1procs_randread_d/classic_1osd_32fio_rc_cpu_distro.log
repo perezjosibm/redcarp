@@ -1,0 +1,524 @@
+MDS=0 MON=1 OSD=1 MGR=1  taskset -ac '0-27,56-83' /ceph/src/vstart.sh --new -x --localhost --without-dashboard --redirect-output --bluestore --bluestore-devs /dev/nvme9n1p2
+ip 127.0.0.1
+port 40000
+
+NOTE: hostname resolves to loopback; remote hosts will not be able to
+  connect.  either adjust /etc/hosts, or edit this script to use your
+  machine's real IP.
+
+creating /ceph/build/keyring
+/ceph/build/bin/monmaptool: monmap file /tmp/ceph_monmap.2298619
+setting min_mon_release = tentacle
+/ceph/build/bin/monmaptool: set fsid to 88493795-176f-4d28-b5c1-8cba87ae9792
+epoch 0
+fsid 88493795-176f-4d28-b5c1-8cba87ae9792
+last_changed 2025-05-14T04:28:02.863120+0000
+created 2025-05-14T04:28:02.863120+0000
+min_mon_release 20 (tentacle)
+election_strategy: 1
+0: [v2:127.0.0.1:40000/0,v1:127.0.0.1:40001/0] mon.a
+/ceph/build/bin/monmaptool: writing epoch 0 to /tmp/ceph_monmap.2298619 (1 monitors)
+
+[mgr]
+	mgr/telemetry/enable = false
+	mgr/telemetry/nag = false
+creating /ceph/build/dev/mgr.x/keyring
+false
+false
+false
+false
+true
+add osd0 1d21958b-b8b9-4249-8f61-71d942488e14
+0
+/ceph/build/bin/ceph-osd -i 0 -c /ceph/build/ceph.conf --mkfs --key AQDYGyRo4w1IHxAAqlXvM266gTnY4/vjK5vbaQ== --osd-uuid 1d21958b-b8b9-4249-8f61-71d942488e14 
+2025-05-14T04:28:08.851+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0/block) _read_multi_bdev_label label at 0x40000000 correct, but osd_uuid=ca559a50-8476-4611-b796-4a18989599d0 need=1d21958b-b8b9-4249-8f61-71d942488e14
+2025-05-14T04:28:08.851+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0/block) _read_multi_bdev_label label at 0x280000000 correct, but osd_uuid=ca559a50-8476-4611-b796-4a18989599d0 need=1d21958b-b8b9-4249-8f61-71d942488e14
+2025-05-14T04:28:08.851+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0/block) _read_multi_bdev_label label at 0x1900000000 correct, but osd_uuid=ca559a50-8476-4611-b796-4a18989599d0 need=1d21958b-b8b9-4249-8f61-71d942488e14
+2025-05-14T04:28:08.851+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0/block) _read_multi_bdev_label label at 0xfa00000000 correct, but osd_uuid=ca559a50-8476-4611-b796-4a18989599d0 need=1d21958b-b8b9-4249-8f61-71d942488e14
+2025-05-14T04:28:08.851+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0/block) No valid bdev label found
+2025-05-14T04:28:08.868+0000 7fd21569f980 -1 bluestore(/ceph/build/dev/osd0) _read_fsid unparsable uuid 
+start osd.0
+osd 0 /ceph/build/bin/ceph-osd -i 0 -c /ceph/build/ceph.conf
+
+
+
+export PYTHONPATH=/ceph/src/pybind:/ceph/build/lib/cython_modules/lib.3:/ceph/src/python-common:$PYTHONPATH
+export LD_LIBRARY_PATH=/ceph/build/lib:$LD_LIBRARY_PATH
+export PATH=/ceph/build/bin:$PATH
+export CEPH_CONF=/ceph/build/ceph.conf
+alias cephfs-shell=/ceph/src/tools/cephfs/shell/cephfs-shell
+CEPH_DEV=1
+taskset -a -c -p 0-27,56-83  2299889
+pid 2299889's current affinity list: 0-27,56-83
+pid 2299889's new affinity list: 0-27,56-83
+pid 2299891's current affinity list: 0-27,56-83
+pid 2299891's new affinity list: 0-27,56-83
+pid 2299892's current affinity list: 0-27,56-83
+pid 2299892's new affinity list: 0-27,56-83
+pid 2299893's current affinity list: 0-27,56-83
+pid 2299893's new affinity list: 0-27,56-83
+pid 2299901's current affinity list: 0-27,56-83
+pid 2299901's new affinity list: 0-27,56-83
+pid 2299902's current affinity list: 0-27,56-83
+pid 2299902's new affinity list: 0-27,56-83
+pid 2299903's current affinity list: 0-27,56-83
+pid 2299903's new affinity list: 0-27,56-83
+pid 2299904's current affinity list: 0-27,56-83
+pid 2299904's new affinity list: 0-27,56-83
+pid 2299905's current affinity list: 0-27,56-83
+pid 2299905's new affinity list: 0-27,56-83
+pid 2299906's current affinity list: 0-27,56-83
+pid 2299906's new affinity list: 0-27,56-83
+pid 2299908's current affinity list: 0-27,56-83
+pid 2299908's new affinity list: 0-27,56-83
+pid 2299909's current affinity list: 0-27,56-83
+pid 2299909's new affinity list: 0-27,56-83
+pid 2299910's current affinity list: 0-27,56-83
+pid 2299910's new affinity list: 0-27,56-83
+pid 2299912's current affinity list: 0-27,56-83
+pid 2299912's new affinity list: 0-27,56-83
+pid 2299914's current affinity list: 0-27,56-83
+pid 2299914's new affinity list: 0-27,56-83
+pid 2299916's current affinity list: 0-27,56-83
+pid 2299916's new affinity list: 0-27,56-83
+pid 2299918's current affinity list: 0-27,56-83
+pid 2299918's new affinity list: 0-27,56-83
+pid 2299920's current affinity list: 0-27,56-83
+pid 2299920's new affinity list: 0-27,56-83
+pid 2299922's current affinity list: 0-27,56-83
+pid 2299922's new affinity list: 0-27,56-83
+pid 2299924's current affinity list: 0-27,56-83
+pid 2299924's new affinity list: 0-27,56-83
+pid 2299926's current affinity list: 0-27,56-83
+pid 2299926's new affinity list: 0-27,56-83
+pid 2299927's current affinity list: 0-27,56-83
+pid 2299927's new affinity list: 0-27,56-83
+pid 2299928's current affinity list: 0-27,56-83
+pid 2299928's new affinity list: 0-27,56-83
+pid 2299929's current affinity list: 0-27,56-83
+pid 2299929's new affinity list: 0-27,56-83
+pid 2299930's current affinity list: 0-27,56-83
+pid 2299930's new affinity list: 0-27,56-83
+pid 2299931's current affinity list: 0-27,56-83
+pid 2299931's new affinity list: 0-27,56-83
+pid 2299932's current affinity list: 0-27,56-83
+pid 2299932's new affinity list: 0-27,56-83
+pid 2299936's current affinity list: 0-27,56-83
+pid 2299936's new affinity list: 0-27,56-83
+pid 2299938's current affinity list: 0-27,56-83
+pid 2299938's new affinity list: 0-27,56-83
+pid 2299939's current affinity list: 0-27,56-83
+pid 2299939's new affinity list: 0-27,56-83
+pid 2299940's current affinity list: 0-27,56-83
+pid 2299940's new affinity list: 0-27,56-83
+pid 2299941's current affinity list: 0-27,56-83
+pid 2299941's new affinity list: 0-27,56-83
+pid 2300122's current affinity list: 0-27,56-83
+pid 2300122's new affinity list: 0-27,56-83
+pid 2300303's current affinity list: 0-27,56-83
+pid 2300303's new affinity list: 0-27,56-83
+pid 2300304's current affinity list: 0-27,56-83
+pid 2300304's new affinity list: 0-27,56-83
+pid 2300305's current affinity list: 0-27,56-83
+pid 2300305's new affinity list: 0-27,56-83
+pid 2300306's current affinity list: 0-27,56-83
+pid 2300306's new affinity list: 0-27,56-83
+pid 2300307's current affinity list: 0-27,56-83
+pid 2300307's new affinity list: 0-27,56-83
+pid 2300308's current affinity list: 0-27,56-83
+pid 2300308's new affinity list: 0-27,56-83
+pid 2300309's current affinity list: 0-27,56-83
+pid 2300309's new affinity list: 0-27,56-83
+pid 2300310's current affinity list: 0-27,56-83
+pid 2300310's new affinity list: 0-27,56-83
+pid 2300311's current affinity list: 0-27,56-83
+pid 2300311's new affinity list: 0-27,56-83
+pid 2300312's current affinity list: 0-27,56-83
+pid 2300312's new affinity list: 0-27,56-83
+pid 2300313's current affinity list: 0-27,56-83
+pid 2300313's new affinity list: 0-27,56-83
+pid 2300314's current affinity list: 0-27,56-83
+pid 2300314's new affinity list: 0-27,56-83
+pid 2300315's current affinity list: 0-27,56-83
+pid 2300315's new affinity list: 0-27,56-83
+pid 2300316's current affinity list: 0-27,56-83
+pid 2300316's new affinity list: 0-27,56-83
+pid 2300317's current affinity list: 0-27,56-83
+pid 2300317's new affinity list: 0-27,56-83
+pid 2300318's current affinity list: 0-27,56-83
+pid 2300318's new affinity list: 0-27,56-83
+pid 2300319's current affinity list: 0-27,56-83
+pid 2300319's new affinity list: 0-27,56-83
+pid 2300320's current affinity list: 0-27,56-83
+pid 2300320's new affinity list: 0-27,56-83
+pid 2300321's current affinity list: 0-27,56-83
+pid 2300321's new affinity list: 0-27,56-83
+pid 2300322's current affinity list: 0-27,56-83
+pid 2300322's new affinity list: 0-27,56-83
+pid 2300323's current affinity list: 0-27,56-83
+pid 2300323's new affinity list: 0-27,56-83
+pid 2300324's current affinity list: 0-27,56-83
+pid 2300324's new affinity list: 0-27,56-83
+pid 2300325's current affinity list: 0-27,56-83
+pid 2300325's new affinity list: 0-27,56-83
+pid 2300326's current affinity list: 0-27,56-83
+pid 2300326's new affinity list: 0-27,56-83
+pid 2300327's current affinity list: 0-27,56-83
+pid 2300327's new affinity list: 0-27,56-83
+pid 2300328's current affinity list: 0-27,56-83
+pid 2300328's new affinity list: 0-27,56-83
+pid 2300329's current affinity list: 0-27,56-83
+pid 2300329's new affinity list: 0-27,56-83
+pid 2300330's current affinity list: 0-27,56-83
+pid 2300330's new affinity list: 0-27,56-83
+pid 2300331's current affinity list: 0-27,56-83
+pid 2300331's new affinity list: 0-27,56-83
+pid 2300332's current affinity list: 0-27,56-83
+pid 2300332's new affinity list: 0-27,56-83
+pid 2300333's current affinity list: 0-27,56-83
+pid 2300333's new affinity list: 0-27,56-83
+pid 2300334's current affinity list: 0-27,56-83
+pid 2300334's new affinity list: 0-27,56-83
+pid 2300335's current affinity list: 0-27,56-83
+pid 2300335's new affinity list: 0-27,56-83
+pid 2300336's current affinity list: 0-27,56-83
+pid 2300336's new affinity list: 0-27,56-83
+pid 2300337's current affinity list: 0-27,56-83
+pid 2300337's new affinity list: 0-27,56-83
+pid 2300338's current affinity list: 0-27,56-83
+pid 2300338's new affinity list: 0-27,56-83
+pid 2300339's current affinity list: 0-27,56-83
+pid 2300339's new affinity list: 0-27,56-83
+pid 2300340's current affinity list: 0-27,56-83
+pid 2300340's new affinity list: 0-27,56-83
+pid 2300341's current affinity list: 0-27,56-83
+pid 2300341's new affinity list: 0-27,56-83
+pid 2300342's current affinity list: 0-27,56-83
+pid 2300342's new affinity list: 0-27,56-83
+pid 2300343's current affinity list: 0-27,56-83
+pid 2300343's new affinity list: 0-27,56-83
+pid 2300344's current affinity list: 0-27,56-83
+pid 2300344's new affinity list: 0-27,56-83
+pid 2300345's current affinity list: 0-27,56-83
+pid 2300345's new affinity list: 0-27,56-83
+pid 2300346's current affinity list: 0-27,56-83
+pid 2300346's new affinity list: 0-27,56-83
+Creating 32 RBD images
+NAME        PROVISIONED  USED
+fio_test_0        2 GiB   0 B
+Prefilling rbd/fio_test_0
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26810   26836.9   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26531.9   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_0        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_1        2 GiB   0 B
+Prefilling rbd/fio_test_1
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26180   26180.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25841.4   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_1        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_2        2 GiB   0 B
+Prefilling rbd/fio_test_2
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25413   25438.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25283.1   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_2        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_3        2 GiB   0 B
+Prefilling rbd/fio_test_3
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25349   25374.5   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25499.5   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_3        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_4        2 GiB   0 B
+Prefilling rbd/fio_test_4
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26565   26512.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26150.7   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_4        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_5        2 GiB   0 B
+Prefilling rbd/fio_test_5
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26564   26564.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26129.9   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_5        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_6        2 GiB   0 B
+Prefilling rbd/fio_test_6
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25549   25574.7   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25032   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_6        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_7        2 GiB   0 B
+Prefilling rbd/fio_test_7
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25415   25440.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25302.6   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_7        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_8        2 GiB   0 B
+Prefilling rbd/fio_test_8
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24259   24234.9   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24164.4   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_8        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_9        2 GiB   0 B
+Prefilling rbd/fio_test_9
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25285   25310.4   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25224.7   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_9        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_10        2 GiB   0 B
+Prefilling rbd/fio_test_10
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26309   26256.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25800.7   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_10        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_11        2 GiB   0 B
+Prefilling rbd/fio_test_11
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25221   25221.1   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25089.5   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_11        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_12        2 GiB   0 B
+Prefilling rbd/fio_test_12
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25340   25365.5   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25224.7   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_12        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_13        2 GiB   0 B
+Prefilling rbd/fio_test_13
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26116   26142.2   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25800.7   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_13        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_14        2 GiB   0 B
+Prefilling rbd/fio_test_14
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26063   26089.2   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25400.7   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_14        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_15        2 GiB   0 B
+Prefilling rbd/fio_test_15
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26181   26181.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25166.6   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_15        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_16        2 GiB   0 B
+Prefilling rbd/fio_test_16
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     23252   23275.5   1.4 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 23321.6   bytes/sec: 1.4 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_16        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_17        2 GiB   0 B
+Prefilling rbd/fio_test_17
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24516   24540.7   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 23865.2   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_17        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_18        2 GiB   0 B
+Prefilling rbd/fio_test_18
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24565   24589.7   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24343.9   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_18        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_19        2 GiB   0 B
+Prefilling rbd/fio_test_19
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24972   24997.1   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24917.8   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_19        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_20        2 GiB   0 B
+Prefilling rbd/fio_test_20
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24965   24865.7   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24785.8   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_20        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_21        2 GiB   0 B
+Prefilling rbd/fio_test_21
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25605   25630.7   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25322.2   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_21        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_22        2 GiB   0 B
+Prefilling rbd/fio_test_22
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24645   24620.5   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24748.4   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_22        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_23        2 GiB   0 B
+Prefilling rbd/fio_test_23
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26273   26299.4   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26129.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_23        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_24        2 GiB   0 B
+Prefilling rbd/fio_test_24
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26319   26345.4   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26088.3   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_24        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_25        2 GiB   0 B
+Prefilling rbd/fio_test_25
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     23300   23300.2   1.4 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 23271.9   bytes/sec: 1.4 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_25        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_26        2 GiB   0 B
+Prefilling rbd/fio_test_26
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25197   25222.4   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24271.8   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_26        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_27        2 GiB   0 B
+Prefilling rbd/fio_test_27
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24007   24031.2   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 23969.9   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_27        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_28        2 GiB   0 B
+Prefilling rbd/fio_test_28
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25860   25834.3   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25459.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_28        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_29        2 GiB   0 B
+Prefilling rbd/fio_test_29
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25220   25245.4   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25108.7   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_29        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_30        2 GiB   0 B
+Prefilling rbd/fio_test_30
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25665   25690.8   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24993.8   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_30        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_31        2 GiB   0 B
+Prefilling rbd/fio_test_31
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25156     25131   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24842.2   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_31        2 GiB  2 GiB
+  cluster:
+    id:     88493795-176f-4d28-b5c1-8cba87ae9792
+    health: HEALTH_WARN
+            2 pool(s) have no replicas configured
+ 
+  services:
+    mon: 1 daemons, quorum a (age 2m) [leader: a]
+    mgr: x(active, since 2m)
+    osd: 1 osds: 1 up (since 114s), 1 in (since 119s)
+ 
+  data:
+    pools:   2 pools, 129 pgs
+    objects: 15.45k objects, 60 GiB
+    usage:   59 GiB used, 7.0 TiB / 7.1 TiB avail
+    pgs:     129 active+clean
+ 
+  io:
+    client:   1.4 MiB/s rd, 1.1 GiB/s wr, 1.77k op/s rd, 1.29k op/s wr
+ 
+pool 1 '.mgr' replicated size 1 min_size 1 crush_rule 0 object_hash rjenkins pg_num 1 pgp_num 1 autoscale_mode on last_change 8 flags hashpspool stripe_width 0 pg_num_max 32 pg_num_min 1 application mgr read_balance_score 1.00
+pool 2 'rbd' replicated size 1 min_size 1 crush_rule 0 object_hash rjenkins pg_num 128 pgp_num 128 pg_num_target 32 pgp_num_target 32 autoscale_mode on last_change 15 flags hashpspool,selfmanaged_snaps stripe_width 0 application rbd read_balance_score 1.00
+POOL_NAME     USED  OBJECTS  CLONES  COPIES  MISSING_ON_PRIMARY  UNFOUND  DEGRADED  RD_OPS      RD  WR_OPS       WR  USED COMPR  UNDER COMPR
+.mgr       580 KiB        2       0       2                   0        0         0      56  46 KiB      79  1.1 MiB         0 B          0 B
+rbd         60 GiB    15452       0   15452                   0        0         0   95368  77 MiB   69520   60 GiB         0 B          0 B
+
+total_objects    15454
+total_used       59 GiB
+total_avail      7.0 TiB
+total_space      7.1 TiB
+/root/bin/run_fio.sh -s -j  -w hockey -r  -a -c "0-111" -f 28-55,84-111 -p "classic_1osd_32fio_rc" -x -n -d /tmp/_6aab5c07ae/osd_1_28fio_classic

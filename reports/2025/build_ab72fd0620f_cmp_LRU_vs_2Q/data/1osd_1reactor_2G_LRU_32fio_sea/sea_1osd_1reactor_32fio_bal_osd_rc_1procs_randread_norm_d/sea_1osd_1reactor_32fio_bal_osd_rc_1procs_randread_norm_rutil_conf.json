@@ -1,0 +1,29 @@
+{
+  "input": [
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_165308.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_165542.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_165815.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_170049.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_170322.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_170556.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_170829.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_171103.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_171336.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_171610.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_174225.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_174758.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_175336.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_175916.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_180457.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_181040.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_181625.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_182210.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_182756.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_dump_20250815_183343.json"
+  ],
+  "output": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm.json"
+}

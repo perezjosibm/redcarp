@@ -1,0 +1,34 @@
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & bw & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+1  & 744.22  & 1510200.00  & 2.73  & 232.42  & 0.64  & 0.23  & 0.00  & 0.00  & 222.73  & 42.00 \\
+\hline
+2  & 217.71  & 203618.00  & 18.72  & 833.16  & 0.22  & 0.09  & 0.00  & 0.00  & 42.53  & 27.89 \\
+\hline
+4  & 439.65  & 582914.00  & 18.56  & 772.30  & 0.39  & 0.16  & 0.00  & 0.00  & 100.35  & 42.00 \\
+\hline
+8  & 110.09  & 94153.00  & 145.91  & 2656.76  & 0.11  & 0.04  & 0.00  & 0.00  & 21.77  & 28.50 \\
+\hline
+16  & 336.49  & 419443.00  & 97.01  & 1940.14  & 0.40  & 0.12  & 0.00  & 0.00  & 76.61  & 40.50 \\
+\hline
+24  & 413.19  & 611754.00  & 118.51  & 2210.46  & 0.50  & 0.13  & 0.00  & 0.00  & 102.22  & 43.50 \\
+\hline
+32  & 1135.64  & 5323596.00  & 57.63  & 49.16  & 1.45  & 0.36  & 0.00  & 0.00  & 234.83  & 58.50 \\
+\hline
+40  & 1376.80  & 6454999.00  & 59.41  & 53.82  & 1.69  & 0.39  & 0.00  & 0.00  & 281.58  & 64.50 \\
+\hline
+52  & 1470.67  & 6895065.00  & 72.28  & 69.71  & 1.84  & 0.41  & 0.00  & 0.00  & 309.51  & 79.50 \\
+\hline
+64  & 1200.15  & 5626077.00  & 89.43  & 83.32  & 1.98  & 0.47  & 0.00  & 0.00  & 277.75  & 57.05 \\
+\hline
+
+\hline
+\end{tabular}
+  \caption{Performance Throughput vs Latency vs CPU util: sequential write 64k, dual reactor per CPU core.}
+  %sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite.}
+\label{table:iops-lat-cpu-sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite}
+\end{table}

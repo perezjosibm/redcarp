@@ -1,0 +1,171 @@
+%\graphicspath{ {./sea_vs_blue_f781c5/} }
+\graphicspath{ {../figures/} }
+
+\chapter{Seastore OSD: single vs. dual Seastar reactor per core}
+
+In this Chapter we show the comparison of Seastore (build 6aab5c07ae) on longer
+duration test sets, producing response latency curves. 
+
+The single reactor per CPU core configuration is shown in Figure
+\ref{figure:sea_1osd_single_reactor_conf}, whereas the dual reactor
+configuration is shown in Figure \ref{figure:sea_1osd_dual_reactor_conf}.
+In both cases, we use the balanced OSD method.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{sea_1osd_single_reactor_conf.png}
+  \caption{Single reactor per physical CPU core configuration.}
+  \label{figure:sea_1osd_single_reactor_conf}
+\end{figure}
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{sea_1osd_dual_reactor_conf.png}
+  \caption{Dual reactor per physical CPU core configuration.}
+  \label{figure:sea_1osd_dual_reactor_conf}
+\end{figure}
+
+
+% The curves show the standard deviation of the mean of the
+% latency as vertical error bars, the smaller the bar, the better (less
+% variation). 
+Unfortunately, there seemed to have occurred several failures, since the OSD
+pid being monitored does not appear the whole duration of the test in the
+performance data. This is reflected in zero valued OSD measurements. The test
+drive script does not expected the pid for the process OSD to change for the
+lifetime of the cluster. Consequently this also affects the benchmark data, as
+shown by the considerable fluctuations.
+
+Despite this, the results below show that the dual configuration achieves
+better performance than the single reactor configuration. 
+\pagebreak
+\section{Random read 4k}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{seastore_1osd_32fio_randread_iops_vs_lat.png}
+  \caption{Response latency curves, IOPs vs. Latency}
+\end{figure}
+
+% utilisation:OSD
+% \begin{figure}[h]
+%   \centering
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_randread_iops_vs_lat_osd_cpu.png}
+%     %\caption{4k random read}
+%      %\label{figure:sea_4k_randread}
+%   \end{minipage}%
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_randread_iops_vs_lat_osd_mem.png}
+%     %\caption{System CPU utilisation}
+%     %\label{figure:sea_4k_randwrite}
+%   \end{minipage}%
+% \end{figure}
+%
+%In the Tables below we show the performance figures for the workloads above.
+% Table showing the figures for this workload
+\subsection{Single reactor}
+\input{sea_1osd_28reactor_32fio_bal_osd_rc_1procs_randread}
+\subsection{Dual reactor}
+\input{sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randread}
+%\newpage
+\pagebreak
+
+\section{Random write 4k}
+
+\begin{figure}[ht!]
+  \centering
+  \includegraphics[width=0.9\textwidth]{seastore_1osd_32fio_randwrite_iops_vs_lat.png}
+\end{figure}
+
+% utilisation:OSD
+% \begin{figure}[h]
+%   \centering
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_randwrite_iops_vs_lat_osd_cpu.png}
+%     %\caption{4k random write}
+%      %\label{figure:sea_4k_randwrite}
+%   \end{minipage}%
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_randwrite_iops_vs_lat_osd_mem.png}
+%     %\caption{System CPU utilisation}
+%     %\label{figure:sea_4k_randwrite}
+%   \end{minipage}%
+% \end{figure}
+%
+\subsection{Single reactor}
+\input{sea_1osd_28reactor_32fio_bal_osd_rc_1procs_randwrite}
+\subsection{Dual reactor}
+\input{sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite}
+%\newpage
+\pagebreak
+
+\section{Sequential read 64k}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{seastore_1osd_32fio_seqread_iops_vs_lat.png}
+  %\caption{Response latency curves, IOPs vs. Latency}
+\end{figure}
+
+% utilisation:OSD
+% \begin{figure}[h]
+%   \centering
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_seqread_iops_vs_lat_osd_cpu.png}
+%     %\caption{4k random write}
+%      %\label{figure:sea_4k_seqread}
+%   \end{minipage}%
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_seqread_iops_vs_lat_osd_mem.png}
+%     %\caption{System CPU utilisation}
+%     %\label{figure:sea_4k_seqread}
+%   \end{minipage}%
+% \end{figure}
+%
+\subsection{Single reactor}
+\input{sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqread}
+\subsection{Dual reactor}
+\input{sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqread}
+%\newpage
+\pagebreak
+
+\section{Sequential write 64k}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.9\textwidth]{seastore_1osd_32fio_seqwrite_iops_vs_lat.png}
+  %\caption{Response latency curves, IOPs vs. Latency}
+\end{figure}
+
+% % utilisation:OSD
+% \begin{figure}[h]
+%   \centering
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_seqwrite_iops_vs_lat_osd_cpu.png}
+%     %\caption{4k random write}
+%      %\label{figure:sea_4k_seqwrite}
+%   \end{minipage}%
+%   \begin{minipage}{.5\textwidth}
+%   \centering
+%     \includegraphics[width=\textwidth]{classic_vs_seastore_1osd_32fio_seqwrite_iops_vs_lat_osd_mem.png}
+%     %\caption{System CPU utilisation}
+%     %\label{figure:sea_4k_seqwrite}
+%   \end{minipage}%
+% \end{figure}
+%
+\subsection{Single reactor}
+\input{sea_1osd_28reactor_32fio_bal_osd_rc_1procs_seqwrite}
+\subsection{Dual reactor}
+\input{sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite}
+%\newpage
+
+

@@ -1,0 +1,525 @@
+['fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_1io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_2io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_4io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_8io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json', 'fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json']
+loading 22 .json files ...
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_1io_64k_seqwrite_p0.json ==
+{'bw': 1028.571,
+ 'clat_ms': 1.9738471217509999,
+ 'clat_stdev': 1.420838998659,
+ 'iodepth': '1',
+ 'jobname': 'write',
+ 'sys_cpu': 0.367426,
+ 'timestamp': '1750948402',
+ 'total_ios': 4821507,
+ 'usr_cpu': 0.960788}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_2io_64k_seqwrite_p0.json ==
+{'bw': 867.928,
+ 'clat_ms': 4.700813745158,
+ 'clat_stdev': 3.3784961357129997,
+ 'iodepth': '2',
+ 'jobname': 'write',
+ 'sys_cpu': 0.360539,
+ 'timestamp': '1750948734',
+ 'total_ios': 4068466,
+ 'usr_cpu': 0.87416}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_4io_64k_seqwrite_p0.json ==
+{'bw': 811.095,
+ 'clat_ms': 10.080986175229,
+ 'clat_stdev': 6.810339037935,
+ 'iodepth': '4',
+ 'jobname': 'write',
+ 'sys_cpu': 0.341889,
+ 'timestamp': '1750949067',
+ 'total_ios': 3802068,
+ 'usr_cpu': 0.839181}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_8io_64k_seqwrite_p0.json ==
+{'bw': 822.206,
+ 'clat_ms': 19.904392364936,
+ 'clat_stdev': 13.429686277227999,
+ 'iodepth': '8',
+ 'jobname': 'write',
+ 'sys_cpu': 0.338114,
+ 'timestamp': '1750949399',
+ 'total_ios': 3854215,
+ 'usr_cpu': 0.990948}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json ==
+{'bw': 810.581,
+ 'clat_ms': 40.404361706058005,
+ 'clat_stdev': 28.819351805845997,
+ 'iodepth': '16',
+ 'jobname': 'write',
+ 'sys_cpu': 0.227597,
+ 'timestamp': '1750950396',
+ 'total_ios': 3799537,
+ 'usr_cpu': 0.99508}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json ==
+{'bw': 810.581,
+ 'clat_ms': 40.404361706058005,
+ 'clat_stdev': 28.819351805845997,
+ 'iodepth': '16',
+ 'jobname': 'write',
+ 'sys_cpu': 0.227597,
+ 'timestamp': '1750950396',
+ 'total_ios': 3799537,
+ 'usr_cpu': 0.99508}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_16io_64k_seqwrite_p0.json ==
+{'bw': 810.581,
+ 'clat_ms': 40.404361706058005,
+ 'clat_stdev': 28.819351805845997,
+ 'iodepth': '16',
+ 'jobname': 'write',
+ 'sys_cpu': 0.227597,
+ 'timestamp': '1750950396',
+ 'total_ios': 3799537,
+ 'usr_cpu': 0.99508}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json ==
+{'bw': 1016.217,
+ 'clat_ms': 48.34774791099,
+ 'clat_stdev': 37.892050067671,
+ 'iodepth': '24',
+ 'jobname': 'write',
+ 'sys_cpu': 0.349523,
+ 'timestamp': '1750951394',
+ 'total_ios': 4763846,
+ 'usr_cpu': 1.342993}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json ==
+{'bw': 1016.217,
+ 'clat_ms': 48.34774791099,
+ 'clat_stdev': 37.892050067671,
+ 'iodepth': '24',
+ 'jobname': 'write',
+ 'sys_cpu': 0.349523,
+ 'timestamp': '1750951394',
+ 'total_ios': 4763846,
+ 'usr_cpu': 1.342993}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_24io_64k_seqwrite_p0.json ==
+{'bw': 1016.217,
+ 'clat_ms': 48.34774791099,
+ 'clat_stdev': 37.892050067671,
+ 'iodepth': '24',
+ 'jobname': 'write',
+ 'sys_cpu': 0.349523,
+ 'timestamp': '1750951394',
+ 'total_ios': 4763846,
+ 'usr_cpu': 1.342993}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json ==
+{'bw': 956.372,
+ 'clat_ms': 68.50537643793399,
+ 'clat_stdev': 59.059238221265005,
+ 'iodepth': '32',
+ 'jobname': 'write',
+ 'sys_cpu': 0.355424,
+ 'timestamp': '1750952391',
+ 'total_ios': 4483485,
+ 'usr_cpu': 1.363113}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json ==
+{'bw': 956.372,
+ 'clat_ms': 68.50537643793399,
+ 'clat_stdev': 59.059238221265005,
+ 'iodepth': '32',
+ 'jobname': 'write',
+ 'sys_cpu': 0.355424,
+ 'timestamp': '1750952391',
+ 'total_ios': 4483485,
+ 'usr_cpu': 1.363113}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_32io_64k_seqwrite_p0.json ==
+{'bw': 956.372,
+ 'clat_ms': 68.50537643793399,
+ 'clat_stdev': 59.059238221265005,
+ 'iodepth': '32',
+ 'jobname': 'write',
+ 'sys_cpu': 0.355424,
+ 'timestamp': '1750952391',
+ 'total_ios': 4483485,
+ 'usr_cpu': 1.363113}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json ==
+{'bw': 1266.845,
+ 'clat_ms': 55.909271000026,
+ 'clat_stdev': 56.503437783697,
+ 'iodepth': '40',
+ 'jobname': 'write',
+ 'sys_cpu': 0.405989,
+ 'timestamp': '1750953389',
+ 'total_ios': 5938218,
+ 'usr_cpu': 1.76185}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json ==
+{'bw': 1266.845,
+ 'clat_ms': 55.909271000026,
+ 'clat_stdev': 56.503437783697,
+ 'iodepth': '40',
+ 'jobname': 'write',
+ 'sys_cpu': 0.405989,
+ 'timestamp': '1750953389',
+ 'total_ios': 5938218,
+ 'usr_cpu': 1.76185}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_40io_64k_seqwrite_p0.json ==
+{'bw': 1266.845,
+ 'clat_ms': 55.909271000026,
+ 'clat_stdev': 56.503437783697,
+ 'iodepth': '40',
+ 'jobname': 'write',
+ 'sys_cpu': 0.405989,
+ 'timestamp': '1750953389',
+ 'total_ios': 5938218,
+ 'usr_cpu': 1.76185}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json ==
+{'bw': 1643.836,
+ 'clat_ms': 63.79684664221,
+ 'clat_stdev': 64.24426924432,
+ 'iodepth': '52',
+ 'jobname': 'write',
+ 'sys_cpu': 0.409767,
+ 'timestamp': '1750954386',
+ 'total_ios': 7707243,
+ 'usr_cpu': 1.964361}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json ==
+{'bw': 1643.836,
+ 'clat_ms': 63.79684664221,
+ 'clat_stdev': 64.24426924432,
+ 'iodepth': '52',
+ 'jobname': 'write',
+ 'sys_cpu': 0.409767,
+ 'timestamp': '1750954386',
+ 'total_ios': 7707243,
+ 'usr_cpu': 1.964361}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_52io_64k_seqwrite_p0.json ==
+{'bw': 1643.836,
+ 'clat_ms': 63.79684664221,
+ 'clat_stdev': 64.24426924432,
+ 'iodepth': '52',
+ 'jobname': 'write',
+ 'sys_cpu': 0.409767,
+ 'timestamp': '1750954386',
+ 'total_ios': 7707243,
+ 'usr_cpu': 1.964361}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json ==
+{'bw': 1633.186,
+ 'clat_ms': 54.651254894462,
+ 'clat_stdev': 57.51297218227101,
+ 'iodepth': '64',
+ 'jobname': 'write',
+ 'sys_cpu': 0.573066,
+ 'timestamp': '1750955384',
+ 'total_ios': 7656303,
+ 'usr_cpu': 2.704129}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json ==
+{'bw': 1633.186,
+ 'clat_ms': 54.651254894462,
+ 'clat_stdev': 57.51297218227101,
+ 'iodepth': '64',
+ 'jobname': 'write',
+ 'sys_cpu': 0.573066,
+ 'timestamp': '1750955384',
+ 'total_ios': 7656303,
+ 'usr_cpu': 2.704129}
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_64io_64k_seqwrite_p0.json ==
+{'bw': 1633.186,
+ 'clat_ms': 54.651254894462,
+ 'clat_stdev': 57.51297218227101,
+ 'iodepth': '64',
+ 'jobname': 'write',
+ 'sys_cpu': 0.573066,
+ 'timestamp': '1750955384',
+ 'total_ios': 7656303,
+ 'usr_cpu': 2.704129}
+Note: clat_ns has been converted to milliseconds
+Note: bw has been converted to MiBs
+ avg_cpu list has: 1 items
+Table (after aggregating OSD CPU avg data):
+{'OSD_cpu': [2943.880000000045,
+             2747.2133333333823,
+             2902.9566666667147,
+             2895.95666666671,
+             3201.000000000045,
+             3103.9366666667142,
+             3193.4833333333695,
+             3288.3166666667175,
+             3536.9933333333897,
+             3344.6666666667174,
+             3735.9766666667247,
+             3619.526666666724,
+             3655.7800000000593,
+             3788.420000000068,
+             3829.0866666667253,
+             3620.7433333333847,
+             4051.5266666667185,
+             3952.5666666667153,
+             4069.4300000000394,
+             3841.043333333395,
+             4065.240000000051,
+             3825.5866666666916],
+ 'OSD_mem': [6038.509999999457,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423],
+ 'bw': [1028.571, 867.928, 811.095,
+        822.206, 810.581, 1016.217,
+        956.372, 1266.845, 1643.836,
+        1633.186],
+ 'clat_ms': [1.9738471217509999,
+             4.700813745158,
+             10.080986175229,
+             19.904392364936,
+             40.404361706058005,
+             48.34774791099,
+             68.50537643793399,
+             55.909271000026,
+             63.79684664221,
+             54.651254894462],
+ 'clat_stdev': [1.420838998659,
+                3.3784961357129997,
+                6.810339037935,
+                13.429686277227999,
+                28.819351805845997,
+                37.892050067671,
+                59.059238221265005,
+                56.503437783697,
+                64.24426924432,
+                57.51297218227101],
+ 'iodepth': ['1', '2', '4', '8', '16',
+             '24', '32', '40', '52',
+             '64'],
+ 'sys_cpu': [0.367426, 0.360539,
+             0.341889, 0.338114,
+             0.227597, 0.349523,
+             0.355424, 0.405989,
+             0.409767, 0.573066],
+ 'total_ios': [4821507, 4068466, 3802068,
+               3854215, 3799537, 4763846,
+               4483485, 5938218, 7707243,
+               7656303],
+ 'usr_cpu': [0.960788, 0.87416, 0.839181,
+             0.990948, 0.99508, 1.342993,
+             1.363113, 1.76185, 1.964361,
+             2.704129]}
+ avg_cpu list has: 1 items
+Table (after aggregating FIO CPU avg data):
+{'FIO_cpu': [227.3200000000047,
+             214.62000000000447,
+             216.56666666667053,
+             245.68000000000433,
+             218.81666666667013,
+             224.87000000000367,
+             160.89333333333286,
+             163.79999999999976,
+             250.18000000000345,
+             245.15000000000404,
+             264.7166666666718,
+             275.0533333333375,
+             243.15333333333692,
+             236.68000000000313,
+             206.5800000000023,
+             221.29000000000363,
+             294.92666666667174,
+             302.12333333333754,
+             308.88666666667143,
+             269.04666666667015,
+             285.2500000000043,
+             313.78333333333467],
+ 'FIO_mem': [0.0, 0.0, 0.0,
+             8.999999999999764,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             44.99999999999559,
+             41.49999999999877,
+             44.766666666662466,
+             44.99999999999559,
+             44.99999999999559,
+             36.18000000000361,
+             41.12666666666578,
+             37.16000000000272],
+ 'OSD_cpu': [2943.880000000045,
+             2747.2133333333823,
+             2902.9566666667147,
+             2895.95666666671,
+             3201.000000000045,
+             3103.9366666667142,
+             3193.4833333333695,
+             3288.3166666667175,
+             3536.9933333333897,
+             3344.6666666667174,
+             3735.9766666667247,
+             3619.526666666724,
+             3655.7800000000593,
+             3788.420000000068,
+             3829.0866666667253,
+             3620.7433333333847,
+             4051.5266666667185,
+             3952.5666666667153,
+             4069.4300000000394,
+             3841.043333333395,
+             4065.240000000051,
+             3825.5866666666916],
+ 'OSD_mem': [6038.509999999457,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423,
+             6283.199999999423],
+ 'bw': [1028.571, 867.928, 811.095,
+        822.206, 810.581, 1016.217,
+        956.372, 1266.845, 1643.836,
+        1633.186],
+ 'clat_ms': [1.9738471217509999,
+             4.700813745158,
+             10.080986175229,
+             19.904392364936,
+             40.404361706058005,
+             48.34774791099,
+             68.50537643793399,
+             55.909271000026,
+             63.79684664221,
+             54.651254894462],
+ 'clat_stdev': [1.420838998659,
+                3.3784961357129997,
+                6.810339037935,
+                13.429686277227999,
+                28.819351805845997,
+                37.892050067671,
+                59.059238221265005,
+                56.503437783697,
+                64.24426924432,
+                57.51297218227101],
+ 'iodepth': ['1', '2', '4', '8', '16',
+             '24', '32', '40', '52',
+             '64'],
+ 'sys_cpu': [0.367426, 0.360539,
+             0.341889, 0.338114,
+             0.227597, 0.349523,
+             0.355424, 0.405989,
+             0.409767, 0.573066],
+ 'total_ios': [4821507, 4068466, 3802068,
+               3854215, 3799537, 4763846,
+               4483485, 5938218, 7707243,
+               7656303],
+ 'usr_cpu': [0.960788, 0.87416, 0.839181,
+             0.990948, 0.99508, 1.342993,
+             1.363113, 1.76185, 1.964361,
+             2.704129]}
+ Wiki table: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite
+{| class="wikitable"
+|- 
+ ! colspan="11"  | 
+        sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite
+|-
+! iodepth !! bw !! total_ios !! clat_ms !! clat_stdev !! usr_cpu !! sys_cpu !! OSD_cpu !! OSD_mem !! FIO_cpu !! FIO_mem
+|-
+ | 1  || 1028.57  || 4821507.00  || 1.97  || 1.42  || 0.96  || 0.37  || 2943.88  || 6038.51  || 227.32  || 0.00 
+|-
+ | 2  || 867.93  || 4068466.00  || 4.70  || 3.38  || 0.87  || 0.36  || 2747.21  || 6283.20  || 214.62  || 0.00 
+|-
+ | 4  || 811.10  || 3802068.00  || 10.08  || 6.81  || 0.84  || 0.34  || 2902.96  || 6283.20  || 216.57  || 0.00 
+|-
+ | 8  || 822.21  || 3854215.00  || 19.90  || 13.43  || 0.99  || 0.34  || 2895.96  || 6283.20  || 245.68  || 9.00 
+|-
+ | 16  || 810.58  || 3799537.00  || 40.40  || 28.82  || 1.00  || 0.23  || 3201.00  || 6283.20  || 218.82  || 45.00 
+|-
+ | 24  || 1016.22  || 4763846.00  || 48.35  || 37.89  || 1.34  || 0.35  || 3103.94  || 6283.20  || 224.87  || 45.00 
+|-
+ | 32  || 956.37  || 4483485.00  || 68.51  || 59.06  || 1.36  || 0.36  || 3193.48  || 6283.20  || 160.89  || 45.00 
+|-
+ | 40  || 1266.85  || 5938218.00  || 55.91  || 56.50  || 1.76  || 0.41  || 3288.32  || 6283.20  || 163.80  || 45.00 
+|-
+ | 52  || 1643.84  || 7707243.00  || 63.80  || 64.24  || 1.96  || 0.41  || 3536.99  || 6283.20  || 250.18  || 45.00 
+|-
+ | 64  || 1633.19  || 7656303.00  || 54.65  || 57.51  || 2.70  || 0.57  || 3344.67  || 6283.20  || 245.15  || 45.00 
+|-
+|}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & bw & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+1  & 1028.57  & 4821507.00  & 1.97  & 1.42  & 0.96  & 0.37  & 2943.88  & 6038.51  & 227.32  & 0.00 \\
+\hline
+2  & 867.93  & 4068466.00  & 4.70  & 3.38  & 0.87  & 0.36  & 2747.21  & 6283.20  & 214.62  & 0.00 \\
+\hline
+4  & 811.10  & 3802068.00  & 10.08  & 6.81  & 0.84  & 0.34  & 2902.96  & 6283.20  & 216.57  & 0.00 \\
+\hline
+8  & 822.21  & 3854215.00  & 19.90  & 13.43  & 0.99  & 0.34  & 2895.96  & 6283.20  & 245.68  & 9.00 \\
+\hline
+16  & 810.58  & 3799537.00  & 40.40  & 28.82  & 1.00  & 0.23  & 3201.00  & 6283.20  & 218.82  & 45.00 \\
+\hline
+24  & 1016.22  & 4763846.00  & 48.35  & 37.89  & 1.34  & 0.35  & 3103.94  & 6283.20  & 224.87  & 45.00 \\
+\hline
+32  & 956.37  & 4483485.00  & 68.51  & 59.06  & 1.36  & 0.36  & 3193.48  & 6283.20  & 160.89  & 45.00 \\
+\hline
+40  & 1266.85  & 5938218.00  & 55.91  & 56.50  & 1.76  & 0.41  & 3288.32  & 6283.20  & 163.80  & 45.00 \\
+\hline
+52  & 1643.84  & 7707243.00  & 63.80  & 64.24  & 1.96  & 0.41  & 3536.99  & 6283.20  & 250.18  & 45.00 \\
+\hline
+64  & 1633.19  & 7656303.00  & 54.65  & 57.51  & 2.70  & 0.57  & 3344.67  & 6283.20  & 245.15  & 45.00 \\
+\hline
+
+\hline
+\end{tabular}
+\caption{Performance Throughput vs Latency vs CPU util: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite.}
+\label{table:iops-lat-cpu-sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite}
+\end{table}
+
+Done

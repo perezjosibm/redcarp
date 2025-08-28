@@ -1,0 +1,17 @@
+{
+  "input" : {
+    "base": {
+      "test_run": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs",
+      "path": "/Users/jjperez/Work/cephdev/ceph-aprg/reports/2025/build_d0a142a1e15/1osd_56reactor_28fio_sea_rc"
+    },
+    "hwloc": {
+      "test_run": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs",
+      "path": "/Users/jjperez/Work/cephdev/ceph-aprg/reports/2025/build_d0a142a1e15/pr63350_hwloc/1osd_56reactor_28fio_sea_rc"
+    }
+  },
+  "output" : {
+    "name": "cmp_base_vs_hwloc",
+    "path": "/Users/jjperez/Work/cephdev/ceph-aprg/reports/2025/build_d0a142a1e15/"
+  }
+}
+

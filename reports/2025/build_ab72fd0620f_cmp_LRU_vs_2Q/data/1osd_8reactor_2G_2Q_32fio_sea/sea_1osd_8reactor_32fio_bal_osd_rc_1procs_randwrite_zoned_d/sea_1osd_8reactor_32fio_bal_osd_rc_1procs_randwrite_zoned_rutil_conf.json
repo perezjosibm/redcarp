@@ -1,0 +1,29 @@
+{
+  "input": [
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_231919.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_232452.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_233026.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_233601.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_234138.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_234714.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_234959.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_235245.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_235530.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250818_235816.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_000101.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_000347.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_000632.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_000917.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_001202.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_001448.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_001733.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_002018.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_002303.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_dump_20250819_002549.json"
+  ],
+  "output": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned.json"
+}

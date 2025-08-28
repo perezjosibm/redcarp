@@ -1,0 +1,27 @@
+{
+  "input": [
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_131152.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_131724.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_132256.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_132829.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_133401.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_133933.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_134506.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_135038.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_135610.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_140143.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_140715.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_141247.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_141820.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_142352.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_142924.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_143457.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_144029.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_dump_20250624_144602.json"
+  ],
+  "output": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread.json"
+}

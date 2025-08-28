@@ -1,0 +1,9 @@
+{
+  "input": [
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite_dump_20250520_103919.json"
+  ],
+  "output": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "benchmark": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite.json"
+}

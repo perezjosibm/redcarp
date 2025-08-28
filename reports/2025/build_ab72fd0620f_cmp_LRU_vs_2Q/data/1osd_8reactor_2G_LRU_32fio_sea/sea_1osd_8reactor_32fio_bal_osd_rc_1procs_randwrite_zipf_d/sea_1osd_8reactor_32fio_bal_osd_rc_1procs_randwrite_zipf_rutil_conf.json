@@ -1,0 +1,24 @@
+{
+  "input": [
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_172318.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_172851.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_173425.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_174000.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_174537.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_175114.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_175651.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_180228.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_180513.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_181050.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_181335.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_181658.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_181943.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_182229.json",
+    "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_dump_20250816_182514.json"
+  ],
+  "output": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf.json"
+}

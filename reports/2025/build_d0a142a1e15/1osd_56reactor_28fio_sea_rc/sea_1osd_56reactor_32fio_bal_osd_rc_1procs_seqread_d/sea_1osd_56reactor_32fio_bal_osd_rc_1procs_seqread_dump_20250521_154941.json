@@ -1,0 +1,8162 @@
+[
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 47.577957319999975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 73.527938779999999
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 63.767111739999969
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 69.504831720000126
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 69.346085640000027
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 52.906530400000094
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 51.880121899999821
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 49.045048940000036
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 50.44218882000002
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 32.5626553399999
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 41.529740200000099
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 37.023417219999956
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 43.518822099999944
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 55.677013279999933
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 52.309195760000001
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 40.972470180000009
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 58.307724520000001
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 29.996032960000107
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 31.393490220000242
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 27.677185420000107
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 33.56817435999978
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 35.361839040000007
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 37.114044980000052
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 37.053331119999953
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 45.234832480000108
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 42.778925059999871
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 26.964441080000114
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 47.607854100000083
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 51.931170099999903
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 48.870528219999834
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 42.812638759999977
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 48.828494260000078
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 50.373206379999935
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 25.191401999999783
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 33.716732499999871
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 31.785658180000009
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 37.027715640000046
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 26.762365979999934
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 37.000989500000017
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 28.837477220000029
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 28.053774659999942
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 26.238397559999914
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 41.879281679999835
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 24.041472440000078
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 46.290638559999842
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 25.677725559999999
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 28.813809920000043
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 29.525930300000102
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 24.83157070000005
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 29.317864399999895
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 35.651935119999912
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 42.726650980000059
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 47.433871099999983
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 48.325427359999907
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 24.18163728000011
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 50.801308500000054
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 36.663316979999983
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 65.954897059999993
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 56.128482279999972
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 67.002178880000102
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 70.23143828000002
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 55.887375240000104
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 70.786488879999808
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 58.490772260000035
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 55.209070680000025
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 33.428739699999923
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 53.113534100000102
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 43.559111739999956
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 47.232175199999936
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 48.361016079999942
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 46.123826419999993
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 37.339090020000008
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 45.624291520000007
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 32.134358060000103
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 28.462932880000224
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 29.954449320000087
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 26.445081259999792
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 42.520465980000012
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 25.089580420000058
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 36.309353539999968
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 53.445458160000115
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 37.43546515999985
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 27.872803380000111
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 46.331981760000076
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 40.119630159999907
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 49.459747899999826
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 54.583620739999986
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 50.144386180000076
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 46.102476019999941
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 32.334166199999757
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 37.288006679999874
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 34.539997319999991
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 47.789680340000039
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 28.373782259999945
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 38.019987060000012
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 29.481473500000021
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 34.169351299999938
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 24.600710339999932
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 35.288164859999839
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 29.794974220000057
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 25.754155559999848
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 30.871597519999984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 27.880913200000034
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 25.920813060000103
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 27.397702180000039
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 31.569427279999896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 31.399642079999911
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 28.710808820000032
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 45.816221319999983
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 29.333000539999897
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 34.694461220000107
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 43.353762740000064
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 18.624987820000005
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 7.5839895400000028
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 14.043386840000016
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 14.412699080000024
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 15.762839940000017
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 22.784156559999978
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 23.432520140000012
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 21.10712668
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 16.1811492
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 4.3324923599999954
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 3.7768902199999732
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 20.150973280000017
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 21.437071760000002
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 20.38661922
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 19.523979720000007
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 14.614314480000012
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 12.362551280000055
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 19.665594800000029
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 15.815771239999998
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 21.305264700000002
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 14.228699079999995
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 20.271200419999968
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 18.780251900000046
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 1.8494314000000123
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 14.261795399999944
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 11.489179160000006
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 9.9154229799999989
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 14.383512019999989
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 20.158998900000036
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 18.864615780000051
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 11.151281640000011
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 17.280238919999935
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 13.739163259999977
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 19.723857239999997
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 22.177636319999984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 21.109037079999993
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 14.879587439999975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 11.972971060000015
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 2.155276659999994
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 16.664551660000026
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 20.293289280000014
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 18.069300899999984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 14.197288480000037
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 2.1993518999999906
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 5.7145189000000096
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 19.382579620000008
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 18.879537440000014
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 21.190394039999994
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 10.195682419999963
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 16.962193860000021
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 15.637318339999972
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 15.409791980000042
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 14.543152739999975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 13.305381260000026
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 6.0247407000000415
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 13.873466159999992
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.50500204000000215
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 3.318424540000009
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.32950326000000807
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.31701008000002417
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.2376711600000192
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.29360259999998695
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.25544644000001782
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.30842602000000774
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.31492678000001328
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.42233435999996516
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.26868183999997353
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.24792832000001264
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.2669836199999942
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.25734494000000385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.25408485999999231
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.33133110000004296
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.29468956000003876
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.20604922000002635
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.2317621400000025
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.23090954000001274
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.20688711999998777
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.21608075999998144
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.21071286000002853
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.20986580000001975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.25159705999993065
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.25287538000000609
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.21939843999998487
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.27322025999998445
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.25184336000003693
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.29063732000003117
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.31799150000002552
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.21869971999992632
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.20815041999998618
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.21747773999996056
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.22615525999996056
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.21638433999999762
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.25161929999999444
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.18800299999999215
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.27122232000000857
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.20094406000001896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.22391712000000563
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.25261941999998871
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.19424128000002927
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.22617335999999266
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.19307190000000807
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.3090432800000098
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.24161671999999301
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.23653039999999015
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.2459288999999476
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.21734790000003112
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.24427571999996456
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.36380300000002919
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.27729701999996692
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.20581188000002859
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.26242536000004035
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.27786624000000204
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.17030283999999174
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.03452359999999155
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.037004520000005758
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.045839940000025337
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.032164320000038771
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.039453919999976605
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.032511739999996347
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.035489060000015726
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.035754980000013425
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.035042339999979966
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.045757179999983411
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.031920300000010116
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.035320160000007483
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.032447000000002113
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.043240380000009182
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.034463660000028096
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.034839040000012034
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.035817920000036363
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.039818039999983679
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.036763080000012938
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.038665879999988384
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.041768759999982752
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.03991714000002311
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.038490940000013296
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.044566579999938405
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.047110380000003893
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.037800019999989498
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.039343199999986034
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.044772400000048229
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.03359344000005704
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.032709420000043288
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.052745639999929317
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.062693779999989374
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.040161239999958465
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.043423799999953161
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.039992979999969869
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.034997839999995062
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.041512040000002415
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.045819060000018563
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.041648600000021574
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.03131132000002701
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.037441319999997891
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.046185420000044441
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.037742739999990782
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.029404620000006432
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.034161920000008728
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.04153929999998196
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.041961779999988291
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.039721439999951258
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.038670180000022203
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.042169199999975149
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.039919660000031776
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.045133479999970305
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.049966360000031074
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.034518040000053318
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.037559160000000258
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.13843724000002222
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.03710240000001086
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.029292940000003043
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.042693400000026749
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.030287500000047984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.030038240000007654
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.030814439999993226
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.028613760000006927
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.032028360000024847
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.027659799999979473
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.036447479999979215
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.029735620000004293
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.032537360000040039
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.030329420000008156
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.032304859999987556
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.029818820000016011
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.031531020000030718
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.026536320000047908
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.032617459999984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.029913160000005767
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.029084219999986338
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.028996039999973355
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.024095120000033887
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.030132160000029273
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.031149819999953809
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.042205260000005573
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.031324999999970959
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.031524459999965337
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.034868760000050791
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.03301490000005014
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.029003760000034795
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.039509439999929619
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.050563919999979667
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.031577959999951055
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.02814883999995299
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.031786419999979554
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.028431699999986737
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029175000000003504
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.037883180000020111
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.029266980000020038
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.027324340000034475
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029266620000001353
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.030748800000068854
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.029430340000002886
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.026007559999996488
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.029526739999996554
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.02986687999999571
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.032363280000013983
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.032506899999951155
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031456560000020506
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.03023913999997685
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.0283678000000398
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.029174979999968542
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.041341220000057355
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.028862740000068499
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.02533453999999935
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.1428498600000272
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.047637920000032086
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.03774946000001389
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.041195720000042346
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.033644500000062916
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.035338279999996836
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.0332558800000049
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.033264459999993168
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.032783100000011167
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.029741479999967346
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.040484719999955843
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.030877159999975756
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.029515920000033891
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.032613020000005211
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.039880819999971173
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.030822340000014048
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.03443656000001738
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.028383280000077171
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.030836239999998405
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.035270380000007595
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.031847679999985612
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.033667759999977953
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.029230840000038505
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.032642640000046796
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.033613559999934317
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.041882480000021705
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.031954339999984427
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.031767879999988757
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.031232920000023867
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.04080374000003939
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.029931280000039528
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.036353399999922154
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.031529699999999217
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.047441659999947206
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.02935571999995723
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.029855559999969472
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.030817559999984923
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.03014647999999287
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.038442640000035944
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.032044720000024007
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.030560040000038313
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029322139999998775
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.038744240000065933
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.025659880000006297
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.026425219999992589
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.03126119999999899
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.032545200000000385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.032803440000006567
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.033189699999958133
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.034634480000017565
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.032976879999979669
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.032261980000047874
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.032979539999999918
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.043344600000039257
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.029594560000045789
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.03134195999999756
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.13670974000004055
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.044826420000021461
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.031892780000009058
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.041603680000035226
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.037157540000065659
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.031946900000001666
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.031857659999989796
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.028699519999997314
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.02798860000001735
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.030223919999972093
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.040741879999961483
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.030706139999980842
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.030204440000036747
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.032675259999992434
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.040863019999992645
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.029601260000022833
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.034708480000023023
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.033527300000080196
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.037371919999995562
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.032356380000009288
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.039652459999972578
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.043125159999957141
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.040708460000038471
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.038616140000047317
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.043790199999926838
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.04357668000001258
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.03738920000000423
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.039152259999986061
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.045895040000032417
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.042556760000067584
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.035886580000032975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.049360939999909537
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.041455180000005143
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.050993939999965932
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.037455939999930798
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.033688059999970044
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.032144079999962827
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.037784099999993437
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.042726440000051547
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.040272200000035507
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.036635480000024589
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.039147579999987414
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.044682760000047672
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.039952479999993962
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.035492920000002037
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.032407119999988687
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.040132960000005546
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.038372840000011621
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.038756139999962524
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.040472820000014842
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.043548879999977252
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.039593080000033254
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.043076719999990409
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.049248820000036275
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.038913100000037559
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.039275299999963487
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.10598094000004998
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.03364040000002344
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.026858540000040954
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.037594900000048614
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.026113080000067512
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.027172760000016005
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.026095239999979203
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.027898880000010173
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.024246299999997056
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.027154179999966388
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.038954239999955398
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.027176759999980593
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.02686860000001845
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.026871019999974433
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.040178099999987893
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.028792820000023145
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.025553000000022585
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.029057260000064922
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.02729101999998651
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.032820180000037169
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.02914535999999357
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.031346159999945389
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.028422800000027504
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.030173320000037585
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.030446479999923781
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.036344180000003057
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.032286519999991103
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.026479979999982639
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.029174420000011025
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.03434186000006445
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.027152060000035227
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.032932979999911183
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.027432840000007896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.041790479999948005
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.026851539999928065
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.026670219999958
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.026047899999970259
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029029659999979529
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.037456100000055059
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.028989880000029888
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.027108320000057695
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.027880139999991727
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.039985120000030072
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.028305140000006723
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.023896260000000336
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.02697793999999476
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.026961760000021595
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.025701980000014668
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.029688019999962734
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.029411940000012571
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.030917139999964149
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.03190100000002305
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.030746179999996404
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.037124180000025486
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.02722984000003148
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.030182099999964684
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.15575538000005551
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.044742960000010434
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.035924340000048627
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.043152860000050808
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.034773960000089588
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.033322319999995464
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.038604559999955157
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.032464200000004162
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.029129660000015711
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.030710679999956803
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.043939359999933814
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.037593459999984979
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.033879180000018216
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.036590279999981767
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.038816080000003694
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.031466959999992827
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.037638400000006289
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.032132100000037411
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.034579759999975312
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.036657820000018937
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.035050920000012642
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.037651059999943559
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.033206380000061486
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.035591580000016165
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.037961239999906304
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.047407640000007856
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.035365760000005686
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.03702897999999788
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.037647860000022959
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.042992560000054691
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.036356460000019908
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.048529439999911439
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.036174100000008202
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.051220399999962751
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.035330679999934222
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.03339641999997589
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.0333747999999634
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.033671839999982467
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.045187940000057658
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.035800520000006664
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.035818780000052008
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.035235459999971575
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.041554680000022159
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.036802340000008371
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.033174300000005097
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.035887919999999518
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.038205820000025703
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.036060860000008965
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.036544579999964188
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.037352860000017252
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.035174639999968615
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.036992339999997181
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.033108159999983844
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.046654480000030141
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.035463880000041748
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.034428419999965598
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.13207364000005217
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.042041980000029344
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.030621780000028576
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.037607360000058154
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.026411260000092085
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.03076403999999755
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.028904999999956882
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.027600900000002149
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.027080960000014365
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.024212539999957094
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.039232939999944705
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.027963119999985242
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.030882720000013908
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.02883027999999177
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.042873279999988689
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.027678119999996476
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.026590860000008654
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.033349620000033831
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.025231159999983266
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.02804366000002112
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.029579979999994066
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.029162459999931833
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.025911380000076534
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.02834102000000005
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.026671959999902128
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.035350260000022171
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.028075360000001659
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.026245200000007962
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.028115300000020049
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.03600830000003441
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.025638880000011799
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.035821539999902896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.029580660000005921
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.041284759999959952
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.031800999999931356
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.028408599999973916
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.028831899999959276
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.030608719999969392
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.03662974000004926
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.027627220000003838
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.026060300000074754
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029584919999980919
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.037655280000015168
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.026655639999995095
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.02424131999998469
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.028949879999995431
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.029100400000026116
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.028251640000009903
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.028767539999974279
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.030311640000024731
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.029261839999972228
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.030409680000020867
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.029114419999987096
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.036732700000041696
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.027201100000029399
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.026163459999950511
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.097828460000037865
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.031819520000042623
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.019537100000022178
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.031368040000057107
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.022108940000076238
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.020085999999974735
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.022958279999962805
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.021970159999984418
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.022796520000012421
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.023061619999964478
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.034479379999952098
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.022610939999978541
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.023775199999997998
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.022176840000009967
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.03182750000000345
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.024290520000025406
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.022735979999999323
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.021878280000031669
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.020909739999974697
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.023719960000012641
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.025489739999962069
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.022769799999955431
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.020465660000068553
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.024139560000002724
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.023575679999898735
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.031941840000038191
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.022117799999998855
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.021000339999999174
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.021671160000025225
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.030147600000063335
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.019720560000002774
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.030951499999920529
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.025867420000014185
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.022668659999958152
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.022377399999939929
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.020181879999991992
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.023075159999952355
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.022708059999954067
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.030844660000051149
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.01980608000000661
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.021124180000076098
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.021022139999982148
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.030478100000008723
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.021146920000003622
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.019193540000017606
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.022554859999979193
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.021653160000034699
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.020835380000017167
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.02548065999997684
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.02339366000000398
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.021041299999968732
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.022312939999991066
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.021371599999975288
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.031849880000023312
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.02109036000002007
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.022098059999953179
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.12879036000004174
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.038284800000043528
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.030464439999999815
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.039908400000054911
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.029488180000081243
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.031719959999976233
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.032062739999982881
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.029632759999975722
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.030482580000001924
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.031509739999979747
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.037616579999943944
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.032225819999964767
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.029819099999994769
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.029927099999982332
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.042831300000012451
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.03089322000002781
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.027761999999986742
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.033163340000053054
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.028908399999982848
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.031772440000010782
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.033910559999961176
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.028540859999948154
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.029535660000068464
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.031177099999990521
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.034218899999882701
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.042001600000030059
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.030488859999999729
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.031366779999997263
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.029413560000013383
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.04139728000006615
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.03006342000001494
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.040033239999914816
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.031533900000002557
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.045792339999972675
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.028001179999914694
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.028692959999976342
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.031223879999942028
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029680599999948321
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.040514140000058596
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.030550240000004614
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.027569440000074774
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029857740000005517
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.037872800000005036
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.027569999999998984
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.02997516000000644
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.033696179999964659
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.032247900000037522
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.030579699999999654
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.030270339999982632
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031988120000003839
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.030283919999940512
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.028766039999994497
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.029703959999982654
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.041799720000024188
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.027562600000041737
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.030949879999953023
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.11748054000002561
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.038543420000047846
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.029510560000001185
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.034415020000055918
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.025414900000064744
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.028094799999967002
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.028785539999975907
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.027868419999954597
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.027091959999991921
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.027637579999961748
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.037720859999945677
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.028582219999961911
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.027063479999989148
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.028350900000007062
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.039472480000013466
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.028079400000025068
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.027127939999971318
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.029662980000044747
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.026387939999994448
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.026673200000015829
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.030378959999977084
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.026809879999944997
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.027277300000050353
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.026479659999978367
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.031470979999892457
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.038102100000036998
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.030101679999994246
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.027225460000013246
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.02738140000002609
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.039215220000077267
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.024746980000034391
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.034927719999910956
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.030928559999987559
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.043005319999978031
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.030244959999914389
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.02781141999999015
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.028224519999953124
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029967579999956584
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.037844340000037224
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.025938479999998432
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.027188360000063305
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.027983520000018913
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.039066539999987882
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.027158559999984622
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.028703160000032035
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.029071739999975144
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.029107900000036047
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.026569960000011328
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.029516839999987887
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031003299999998735
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.029530979999914386
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.029809979999972924
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.030329919999982913
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.038215140000008585
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.026456140000041817
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.03066181999995532
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.12925906000003096
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.038713740000040353
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.02982227999999143
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.040844520000060669
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.029519420000068131
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.031144559999951582
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.03241139999996534
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.031266179999944743
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.029454199999989772
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.032128619999949315
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.042283479999927209
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.031276679999958645
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.030618419999983715
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.028560960000001412
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.040341300000035218
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.030540520000033045
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.029048979999957147
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.02847250000005408
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.031965899999963909
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.030540120000011051
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.031417339999983973
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.03070445999995286
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.028640360000076193
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.029550119999965929
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.032402699999911633
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.043673940000032996
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.028842960000008411
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.030421880000031098
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.027838380000022589
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.038090340000096479
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.028845700000013075
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.038751279999904575
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.031095679999981751
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.042447459999972459
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.031569339999926171
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.030057100000013826
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.029700119999931385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.03045123999994015
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.037562320000050775
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.029536960000009493
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.029759140000062967
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029274160000014593
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.039113919999977931
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.028709099999990606
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.026728360000038975
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.030569599999963337
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.033102900000014923
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.027300040000000081
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.032439719999977079
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.036856340000002152
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.029232199999928987
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.028675999999960844
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.030244060000006456
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.042496200000019524
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.029458960000039447
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.029957979999939433
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.13304398000004714
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.041360480000052213
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.033958659999977492
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.04070526000006236
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.032736500000063451
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.032708999999953026
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.032426999999946027
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.03074523999992973
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.02864484000000278
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.030563819999929187
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.043285619999922087
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.033994719999963507
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.034169619999990797
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.030537600000002385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.039890860000046935
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.030155940000020642
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.027850339999968554
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.034030460000056273
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.030539719999989057
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.033047500000016328
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.03634089999998702
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.032734719999938378
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.029765000000059327
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.032756379999965279
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.033040879999890471
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.045011960000040929
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.031770139999998115
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.029712660000014157
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.03049420000003078
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.039388360000103262
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.029295980000021427
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.04119113999988544
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.031016259999971929
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.046684519999939944
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.031614839999938305
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.031016219999990824
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.030430499999922755
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.031834879999970145
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.03817622000007459
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.030882520000019564
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.028849020000054626
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.031230500000012373
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.040002079999967854
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.028122819999987225
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.029589160000020875
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.034923099999972784
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.032979279999989508
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.031677100000004899
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.036984959999986078
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031560459999979695
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.030408899999945227
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.031007459999965459
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.033601860000020967
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.042470140000017143
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.030049120000041896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.032639279999935322
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.136614780000055
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.038753640000077638
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.029226459999998067
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.038278100000077586
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.0279686800000567
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.02853737999997108
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.028057799999958721
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.026976919999932569
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.028935919999995008
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.025608879999960976
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.038055679999915437
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.02858861999994744
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.029515380000000313
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.030061719999996406
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.038965160000037358
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.026574840000015421
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.025147679999970585
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.027551520000057561
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.027561179999979757
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.025735340000032636
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.030675639999988569
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.027676739999948907
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.026387260000038104
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.026895879999977446
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.029130259999898822
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.041465560000053525
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.028603080000011438
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.026693499999996817
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.028472620000030702
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.037573460000095427
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.027612060000015148
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.036139639999888118
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.02855575999995974
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.049452879999933863
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.033009939999917304
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.02887465999998895
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.029085939999939914
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.027016439999993924
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.037025300000070871
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.027046720000034608
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.02607894000005162
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.028519480000011033
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.042126399999986575
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.026671300000002951
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.027137940000021565
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.029495759999953464
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.029561439999992167
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.027186260000000573
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.029818859999986014
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.028837279999982535
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.031135739999932355
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.030652899999961125
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.028441240000032231
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.041245860000027612
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.0272147200000461
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.032230279999934108
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.11808532000003868
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.038830280000068385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.029054699999986333
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.041418680000082642
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.030234800000061846
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.033392099999951519
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.033601779999958836
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.029609799999930075
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.030024719999988125
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.031994879999963644
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.040996879999921632
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.033419819999935818
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.033585039999994848
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.035686579999982815
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.042215860000038852
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.031309739999985098
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.028887059999993525
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.035087040000048031
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.032299940000002358
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.030667500000058912
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.034877939999988783
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.029910779999942072
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.031280100000041777
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.032160139999992676
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.033156479999885136
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.041444400000034687
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.031310820000007844
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.029863000000018847
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.030675900000010081
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.041451140000092757
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.028971719999992818
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.041038759999878494
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.034319259999959773
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.041512539999943865
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.031677679999919661
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.03068623999998854
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.031259819999940319
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029093599999985287
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.040644140000067885
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.029305460000028649
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.029304720000045137
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.029688760000001757
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.039612319999982049
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.029415120000009232
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.031241400000014963
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.032709039999967437
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.030091019999978208
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.032121819999986201
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.033703059999989904
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031672979999997075
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.03102473999994082
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.032795639999938508
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.030732080000062112
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.041500500000013485
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.029504000000035724
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.029310519999936613
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.14002440000004945
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.045303780000083282
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.03258593999999615
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.041580180000089229
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.030390580000061451
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.030459579999952968
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.033320879999942932
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.034702079999937574
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.03310226000001748
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.031269299999969746
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.041035439999936862
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.035883119999935431
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.034825299999985404
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.034974299999968039
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.042517640000028223
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.035148860000000504
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.033416719999990185
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.033310240000061775
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.031676380000011939
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.033111940000041251
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.034078720000008111
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.032815339999947568
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.030684520000034965
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.031877899999999126
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.033434679999877481
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.044389400000022228
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.032335159999985486
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.028065280000011406
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.033360300000018217
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.043427140000074083
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.028088039999973891
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.040879499999879609
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.031461159999968125
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.047399919999935314
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.034275559999918936
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.030907359999998718
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.032433899999939619
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.032127079999988428
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.041109520000059963
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.030314620000004844
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.035040760000049076
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.028024020000005923
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.040660059999964027
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.031209880000004908
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.03051826000001201
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.032587039999953937
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.027525959999974425
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.032653700000018215
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.032206900000009142
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.031763100000015143
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.032415959999942956
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.031206879999945425
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.03223554000005846
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.0439629200000069
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.028305860000021887
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.029109259999926529
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.1066192200000371
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.033326020000090661
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.021420479999978426
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.030563280000106552
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.021804060000074621
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.0210322599999202
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.019533259999948704
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.021675239999952023
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.023088900000023393
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.022546639999965201
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.030700999999933032
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.0232711199999458
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.021480619999980632
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.021646639999972628
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.029120960000050822
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.02274982000000092
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.021683479999978772
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.023490960000072114
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.021411860000020155
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.019859000000044258
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.023742540000015744
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.022331339999914768
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.022058120000034709
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.021175560000008531
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.021370459999880964
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.032357060000043347
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.020780939999998083
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.021563860000017865
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.021519880000020475
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.030915000000097947
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.022081939999973876
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.028651679999880386
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.023439579999973148
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.0272780599999356
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.024413379999910223
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.022385280000003505
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.022890899999961078
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.022350839999984995
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.031628880000067472
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.020565480000001024
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.02027778000004421
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.021416060000012394
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.031050759999984301
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.019589620000004526
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.02209702000002256
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.021201459999953265
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.021052079999983597
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.020053740000014475
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.023191639999997626
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.022527840000008403
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.021861999999939208
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.021535599999933375
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.021154680000035064
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.032081699999997326
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.022672980000038034
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.021808659999933422
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.1484324200000442
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.04181812000010332
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.029484399999990529
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.043771320000129954
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.030996620000078856
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.037108199999935643
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.031267119999944804
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.029476339999923162
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.030152380000014745
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.032936739999955833
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.043747359999946056
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.033162139999953766
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.029287299999991578
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.035266759999974528
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.042796520000054628
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.031273519999996946
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.031374239999981679
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.034622140000073465
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.030039860000019569
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.037042260000030858
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.038086599999997972
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.035652159999921551
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.0318676800000528
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.033476539999999222
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.035988259999863992
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.042949720000029501
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.033657779999984871
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.030370940000012947
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.035328740000029057
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.045278400000081653
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.029054299999997646
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.042492319999865025
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.033011359999979284
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.045845799999955084
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.034132219999916114
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.032444660000008341
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.034123859999946049
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.030480039999991604
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.041275680000074644
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.031751580000005664
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.030410240000044997
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.031265360000021225
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.042551799999990259
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.031141260000011606
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.029437040000035442
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.035956999999964268
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.033334359999992458
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.03529896000000754
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.038328800000009267
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.033551500000017498
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.03343961999994205
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.035526559999943252
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.031084580000051432
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.042080140000000377
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.031574920000032591
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.035576439999940312
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.13525328000008052
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.043367960000118
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.031528159999982819
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.043688260000118717
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.030556400000059103
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.033867639999951571
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.036385519999937443
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.031288899999926123
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.029581900000019701
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.03140371999995617
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.04187713999992404
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.030911639999953167
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.034021139999995675
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.034021099999970161
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.0415892400000617
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.028497219999978896
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.032535599999994336
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.030463000000091611
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.032950800000031144
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.033726460000016445
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.031987760000007359
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.030597059999926124
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.027713740000079312
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.031251279999977566
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.031964399999862003
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.038696040000019138
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.032782079999993385
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.03528980000000459
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.031580020000032683
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.040163100000101259
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.030600680000014702
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.040445299999869455
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.029919639999964609
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.049535059999961106
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.033415059999908348
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.03009535999998203
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.031362659999945031
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.0281644800000036
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.041199880000042377
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.031705339999987814
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.028362320000052677
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.030621940000030712
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.040885379999999749
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.027734740000018299
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.029791060000028402
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.035498799999955644
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.031142500000003182
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.032007480000018074
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.033437620000020818
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.030206700000012798
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.031529999999935221
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.033200059999938247
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.031880840000053645
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.038914600000039545
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.030414380000043373
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.03003669999995795
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.12453746000006261
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.040178720000116908
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.026719899999982921
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.039534440000110749
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.027007460000061378
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.028067399999964771
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.030183459999932882
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.026283719999908861
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.028770420000046038
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.027204299999961101
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.037612799999942048
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.027737339999955868
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.0269792399999913
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.029183979999958254
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.039615540000048632
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.025612360000004664
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.025007579999991592
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.025594280000085234
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.025158340000031032
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.029393880000028183
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.028521999999997494
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.029094759999925834
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.028352460000080626
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.027692079999996899
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.031063359999872198
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.04110674000000758
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.028383060000036764
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.027486459999992441
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.026046620000030885
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.037369140000098611
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.028425360000017275
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.038445179999857526
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.028812599999961108
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.044073599999971957
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.029086719999926736
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.028609639999988001
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.026468719999961365
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.026426420000014161
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.038186040000032229
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.024809820000015748
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.027804960000055168
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.02756388000002552
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.038329339999987333
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.027630940000034077
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.023862360000037608
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.028582539999955081
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.029462040000005629
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.029517220000030431
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.02849712000001503
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.028537140000017835
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.029819079999926501
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.027330419999938016
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.027865700000051508
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.041474880000036407
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.029291080000048986
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.028399799999967446
+        }
+      }
+    ]
+  },
+  {
+    "metrics": [
+      {
+        "reactor_utilization": {
+          "shard": "0",
+          "value": 0.12265188000007976
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "1",
+          "value": 0.037852200000132452
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "2",
+          "value": 0.035439099999989843
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "3",
+          "value": 0.039748380000104166
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "4",
+          "value": 0.03185724000003276
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "5",
+          "value": 0.03010095999996798
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "6",
+          "value": 0.03119077999993447
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "7",
+          "value": 0.031285459999930154
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "8",
+          "value": 0.028205800000047354
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "9",
+          "value": 0.030195639999963664
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "10",
+          "value": 0.043906279999950115
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "11",
+          "value": 0.034369419999957795
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "12",
+          "value": 0.032569519999992025
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "13",
+          "value": 0.033051459999977606
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "14",
+          "value": 0.043304500000029833
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "15",
+          "value": 0.028520280000021714
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "16",
+          "value": 0.030803759999997737
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "17",
+          "value": 0.033109180000079341
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "18",
+          "value": 0.028686960000046113
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "19",
+          "value": 0.031812400000008623
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "20",
+          "value": 0.031600619999982982
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "21",
+          "value": 0.028692679999919868
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "22",
+          "value": 0.031406800000066681
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "23",
+          "value": 0.029755399999986665
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "24",
+          "value": 0.032077079999859315
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "25",
+          "value": 0.042827120000021868
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "26",
+          "value": 0.033460880000046878
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "27",
+          "value": 0.029350640000003203
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "28",
+          "value": 0.030273860000007424
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "29",
+          "value": 0.041206480000099965
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "30",
+          "value": 0.029642820000019832
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "31",
+          "value": 0.040716739999857587
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "32",
+          "value": 0.032196299999953659
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "33",
+          "value": 0.043552059999973913
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "34",
+          "value": 0.028064899999935555
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "35",
+          "value": 0.029838479999999556
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "36",
+          "value": 0.029724319999957505
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "37",
+          "value": 0.029958960000020518
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "38",
+          "value": 0.03838398000004517
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "39",
+          "value": 0.029367200000030014
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "40",
+          "value": 0.028626880000037769
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "41",
+          "value": 0.02889358000002229
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "42",
+          "value": 0.040849979999979524
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "43",
+          "value": 0.02735982000001691
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "44",
+          "value": 0.02870260000003011
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "45",
+          "value": 0.03586477999995008
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "46",
+          "value": 0.034296919999998732
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "47",
+          "value": 0.033387000000029143
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "48",
+          "value": 0.031286500000016204
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "49",
+          "value": 0.029619740000019767
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "50",
+          "value": 0.030160159999903513
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "51",
+          "value": 0.031655699999921794
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "52",
+          "value": 0.030069860000048187
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "53",
+          "value": 0.042367320000047393
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "54",
+          "value": 0.029328740000045261
+        }
+      },
+      {
+        "reactor_utilization": {
+          "shard": "55",
+          "value": 0.030514659999969496
+        }
+      }
+    ]
+  }
+]

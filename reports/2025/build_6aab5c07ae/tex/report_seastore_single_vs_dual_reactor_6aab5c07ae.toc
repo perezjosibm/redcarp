@@ -1,0 +1,13 @@
+\contentsline {chapter}{\numberline {1}Seastore OSD: single vs. dual Seastar reactor per core}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Random read 4k}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Single reactor}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Dual reactor}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Random write 4k}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Single reactor}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Dual reactor}{4}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Sequential read 64k}{5}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Single reactor}{5}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Dual reactor}{5}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Sequential write 64k}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Single reactor}{6}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Dual reactor}{6}{subsection.1.4.2}%

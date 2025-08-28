@@ -1,0 +1,12 @@
+{
+  "VSTART_CPU_CORES": "0-27,56-83",
+  "FIO_CPU_CORES": "28-55,84-111",
+  "FIO_JOBS": "/root/bin/rbd_fio_examples/",
+  "FIO_SPEC": "32fio",
+  "OSD_TYPE": "sea",
+  "STORE_DEVS": "/dev/nvme9n1p2,/dev/nvme8n1p2",
+  "NUM_RBD_IMAGES": "32",
+  "RBD_SIZE": "2GB",
+  "OSD_RANGE": "1",
+  "REACTOR_RANGE": "8"
+}

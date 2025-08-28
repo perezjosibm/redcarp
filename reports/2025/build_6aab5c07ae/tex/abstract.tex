@@ -1,0 +1,18 @@
+\begin{abstract} 
+  In this brief report we summarise the performance results for the comparison
+  between the Crimson SeaStore using the following configurations:
+  \begin{itemize}
+    \item single Seastar reactor per physical core: up to 28 reactors, single NUMA socket,
+    \item dual Seastar reactor per physical core: up to 56 reactors, single NUMA socket.
+    \item We used the same ceph dev build from main branch (hash 6aab5c07ae) for both.
+    \item We only used the balanced OSD algorithm.
+  \end{itemize}
+Our preliminary conclusions:
+  \begin{itemize}
+    \item The performance of the Crimson SeaStore using the dual Seastar
+	reactor per physical core achieves better performance across the four typical workloads. 
+  This suggest that Seastar is HT-friendly in the sense that reactors don't
+      seem to interfere each other use of the physical CPU.
+  \end{itemize}
+\end{abstract}
+

@@ -1,0 +1,5 @@
+Workload iodepth iops total_ios clat_ms clat_stdev usr_cpu sys_cpu OSD_cpu OSD_mem FIO_cpu FIO_mem
+randread4k   128  68695.43  4112383.00  0.40  62.70  1.06  1.00  1730.84  1961.00  290.20  0.00
+randwrite4k 128  9829.34  539287.00  2.83  248.05  0.25  0.19  0.00  0.00  52.29  0.00
+seqread64k 128  3333.56  15626184.00  0.53  0.26  0.87  0.79  0.00  0.00  476.42  37.97
+seqwrite64k  128  782.64  1771428.00  2.27  233.97  0.68  0.24  0.00  0.00  229.11  37.94

@@ -1,0 +1,10 @@
+{
+  "input": [
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_dump_before.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_dump_after.json"
+  ],
+  "output": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_perf.json",
+  "type": "crimson",
+  "operator": "difference",
+  "benchmark": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf.json"
+}

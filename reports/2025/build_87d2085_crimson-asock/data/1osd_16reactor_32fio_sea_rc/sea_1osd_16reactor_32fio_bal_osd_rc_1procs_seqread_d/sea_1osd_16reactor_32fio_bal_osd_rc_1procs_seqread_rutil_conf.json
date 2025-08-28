@@ -1,0 +1,33 @@
+{
+  "input": [
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_122342.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_122915.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_123447.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_124019.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_124552.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_125124.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_125656.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_130229.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_130801.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_131333.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_131906.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_132438.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_133011.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_133543.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_134116.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_134648.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_135221.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_135753.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_140326.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_140859.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_141431.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_142004.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_142537.json",
+    "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_dump_20250627_143110.json"
+  ],
+  "output": "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_16reactor_32fio_bal_osd_rc_1procs_seqread.json"
+}

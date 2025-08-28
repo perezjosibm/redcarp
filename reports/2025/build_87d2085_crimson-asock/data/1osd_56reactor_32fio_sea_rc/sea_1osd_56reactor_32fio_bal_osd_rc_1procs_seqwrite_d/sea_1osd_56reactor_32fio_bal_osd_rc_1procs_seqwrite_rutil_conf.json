@@ -1,0 +1,31 @@
+{
+  "input": [
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_142821.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_143353.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_143926.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_144458.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_145030.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_145603.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_150135.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_150708.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_151240.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_151813.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_152345.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_152918.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_153450.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_154022.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_154555.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_155127.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_155700.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_160232.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_160805.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_161337.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_161910.json",
+    "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_dump_20250626_162443.json"
+  ],
+  "output": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite.json"
+}

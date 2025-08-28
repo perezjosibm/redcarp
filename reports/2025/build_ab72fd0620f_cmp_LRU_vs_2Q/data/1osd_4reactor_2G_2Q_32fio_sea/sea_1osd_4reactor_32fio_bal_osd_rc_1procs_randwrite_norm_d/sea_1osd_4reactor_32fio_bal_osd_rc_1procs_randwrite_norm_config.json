@@ -1,0 +1,10 @@
+{
+  "input": [
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_before.json",
+    "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_after.json"
+  ],
+  "output": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_perf.json",
+  "type": "crimson",
+  "operator": "difference",
+  "benchmark": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm.json"
+}

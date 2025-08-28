@@ -1,0 +1,491 @@
+MDS=0 MON=1 OSD=1 MGR=1 taskset -ac '0-27' /ceph/src/vstart.sh --new -x --localhost --without-dashboard --redirect-output --seastore --seastore-devs /dev/nvme9n1p2 --osd-args "--seastore_max_concurrent_transactions=128 --seastore_cache_lru_size=2G" --crimson  --crimson-balance-cpu osd --crimson-smp 28
+ip 127.0.0.1
+port 40000
+
+NOTE: hostname resolves to loopback; remote hosts will not be able to
+  connect.  either adjust /etc/hosts, or edit this script to use your
+  machine's real IP.
+
+creating /ceph/build/keyring
+/ceph/build/bin/monmaptool: monmap file /tmp/ceph_monmap.2056911
+setting min_mon_release = tentacle
+/ceph/build/bin/monmaptool: set fsid to 500a2df4-3301-453f-a3a1-be11800d6c09
+epoch 0
+fsid 500a2df4-3301-453f-a3a1-be11800d6c09
+last_changed 2025-05-13T09:43:20.655459+0000
+created 2025-05-13T09:43:20.655459+0000
+min_mon_release 20 (tentacle)
+election_strategy: 1
+0: v2:127.0.0.1:40001/0 mon.a
+/ceph/build/bin/monmaptool: writing epoch 0 to /tmp/ceph_monmap.2056911 (1 monitors)
+
+[mgr]
+	mgr/telemetry/enable = false
+	mgr/telemetry/nag = false
+creating /ceph/build/dev/mgr.x/keyring
+false
+false
+false
+false
+true
+python3 /ceph/build/../src/tools/contrib/assign_crimson_cores.py -o 1 -r 28 -a 0 -b osd
+/ceph/build/bin/ceph -c /ceph/build/ceph.conf config set osd.0 crimson_seastar_cpu_cores 0-27
+No alienstore cpu_table entry for osd 0
+add osd0 295b2580-390d-45cf-9b80-59e7b6ab1825
+0
+/ceph/build/bin/crimson-osd --seastore_max_concurrent_transactions=128 --seastore_cache_lru_size=2G -i 0 -c /ceph/build/ceph.conf --mkfs --key AQA+FCNo5MZkLxAA4IP3wjpFxWhgcj2Lmf+rqw== --osd-uuid 295b2580-390d-45cf-9b80-59e7b6ab1825 
+INFO  2025-05-13 09:43:27,309 seastar - Reactor backend: linux-aio
+INFO  2025-05-13 09:43:27,344 [shard 0:main] osd - populating config from monitor
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding auth protocol: cephx
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding auth protocol: cephx
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding auth protocol: cephx
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: crc
+INFO  2025-05-13 09:43:27,344 [shard 0:main] auth - AuthRegistry(0x60000049fd60) adding con mode: secure
+DEBUG 2025-05-13 09:43:27,344 [shard 0:main] monc - build_monmap: for_mkfs=false
+INFO  2025-05-13 09:43:27,344 [shard 0:main] monc - reopen_session to mon.-1
+INFO  2025-05-13 09:43:27,344 [shard 0:main] monc - connecting to mon.0
+INFO  2025-05-13 09:43:27,344 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] ProtocolV2::start_connect(): peer_addr=v2:127.0.0.1:40001/0, peer_name=mon.?, client_cookie=0x6a6b8dad4c983069 policy(lossy=false, server=false, standby=false, resetcheck=true)
+DEBUG 2025-05-13 09:43:27,344 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] TRIGGER CONNECTING, was NONE
+DEBUG 2025-05-13 09:43:27,344 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] send 1 IOHandler::set_io_state(): new_state=CONNECTING, new_io_state=delay, fa=N/A, set_notify_out=false
+DEBUG 2025-05-13 09:43:27,344 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] got 1  do_set_io_state(): prv_state=delay, new_state=delay, fa=N/A, set_notify_out=false, at io_stat(io_state=delay, in_seq=0, out_seq=0, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,344 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] UPDATE: gs=1 for connect
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] send 1 send() to core 0 -- mon_getmap magic: 0 v1
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] got 1 do_send() from core 0 -- mon_getmap magic: 0 v1
+INFO  2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] do_out_dispatch: stop(delay...) at delay, no out_exit_dispatching
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - Socket::connect(): connected to v2:127.0.0.1:40001/0, socket 0x600000005b00
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) - >> mon.? v2:127.0.0.1:40001/0] socket connected
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] SEND(26) banner: len_payload=16, supported=0x1, required=0x0, banner="ceph v2
+"
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] RECV(10) banner: "ceph v2
+"
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] GOT banner: payload_len=16
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] RECV(16) banner features: supported=0x3 required=0x0
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] WRITE HelloFrame: my_type=client, peer_addr=v2:127.0.0.1:40001/0
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@0 >> mon.? v2:127.0.0.1:40001/0] GOT HelloFrame: my_type=mon peer_addr=v2:127.0.0.1:64058/0
+INFO  2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) -@64058 >> mon.? v2:127.0.0.1:40001/0] peer v2:127.0.0.1:40001/0 says I am v2:127.0.0.1:64058/0 (socket says 127.0.0.1:64058)
+INFO  2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] learned myaddr=127.0.0.1:0/4122202723 (unbound)
+INFO  2025-05-13 09:43:27,345 [shard 0:main] monc - get_auth_request(conn=[0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0], auth_method=0)
+INFO  2025-05-13 09:43:27,345 [shard 0:main] monc - method 2 preferred_modes [2, 1]
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] WRITE AuthRequestFrame: method=2, preferred_modes=[2, 1], payload_len=18
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] GOT AuthReplyMoreFrame: payload_len=9
+INFO  2025-05-13 09:43:27,345 [shard 0:main] monc -  responding with 36 bytes
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] WRITE AuthRequestMoreFrame: payload_len=36
+DEBUG 2025-05-13 09:43:27,345 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] GOT AuthDoneFrame: gid=4127, con_mode=secure, payload_len=824
+DEBUG 2025-05-13 09:43:27,346 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] WRITE AuthSignatureFrame: signature=b5f1b6b4ed1f98e8b36d4c5de39500b763628313bc1939590a23c2dd5e6daebb
+INFO  2025-05-13 09:43:27,346 [shard 0:main] monc - found mon.noname-a
+DEBUG 2025-05-13 09:43:27,346 [shard 0:main] monc - reopen_session mon connection attempts complete
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_rotating_keyring renewing rotating keys  (they expired before 2025-05-13T09:42:57.346964+0000)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - sending auth(proto 2 2 bytes epoch 0) v1
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] send 2 send() to core 0 -- auth(proto 2 2 bytes epoch 0) v1
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] got 2 do_send() from core 0 -- auth(proto 2 2 bytes epoch 0) v1
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - waiting
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] GOT AuthSignatureFrame: signature=e030ea59550c49db2f262b4ca31076d614a7dfa3898033d0df8cdab6020d1031
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] WRITE ClientIdentFrame: addrs=127.0.0.1:0/4122202723, target=v2:127.0.0.1:40001/0, gid=-1, gs=1, features_supported=0x3f07fffffffdffff, features_required=0x800000000000000, flags=0x0, client_cookie=0x6a6b8dad4c983069
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] send 2 IOHandler::requeue_out_sent()
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] got 2 requeue_out_sent()
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.? v2:127.0.0.1:40001/0] GOT ServerIdentFrame: addrs=v2:127.0.0.1:40001/0, gid=0, gs=32, features_supported=0x3f07fffffffdffff, features_required=0xc01020002040000, flags=0x1, server_cookie=0x0
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] UPDATE: features=0x3f07fffffffdffff
+WARN  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] UPDATE Policy(lossy=true) from server flags
+INFO  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] connected: gs=1, pgs=32, cs=0, client_cookie=0x6a6b8dad4c983069, server_cookie=0x0, io(in_seq=0, is_out_queued=false, has_out_sent=false), new_sid=0, send 3 IOHandler::dispatch_connect()
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 3 to_new_sid_1(new_sid=0, connect) at io_stat(io_state=delay, in_seq=0, out_seq=0, out_pending_msgs_size=2, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 4 to_new_sid_2(prv_sid=0, is_dropped=false, connect) at io_stat(io_state=delay, in_seq=0, out_seq=0, out_pending_msgs_size=2, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got cleanup_prv_shard()
+INFO  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] do_out_dispatch: stop(delay...) at delay, no out_exit_dispatching
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] TRIGGER READY, was CONNECTING
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] send 5 IOHandler::set_io_state(): new_state=READY, new_io_state=open, fa=(sid=0), set_notify_out=false
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 5  do_set_io_state(): prv_state=delay, new_state=open, fa=present, set_notify_out=false, at io_stat(io_state=delay, in_seq=0, out_seq=0, out_pending_msgs_size=2, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] do_out_dispatch: stop(switched) at switched, no out_exit_dispatching
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] --> #1 === mon_getmap magic: 0 v1 (5)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] --> #2 === auth(proto 2 2 bytes epoch 0) v1 (17)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] <== #1 === mon_map magic: 0 v1 (4)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - got monmap 1, mon.a, is now rank 0
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - handle_monmap: renewing tickets
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_rotating_keyring renewing rotating keys  (they expired before 2025-05-13T09:42:57.347270+0000)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_rotating_keyring called too often (last: 2025-05-13T09:43:27.346964+0000)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - renew_tickets: don't need new tickets
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - handle_mon_map: renewed tickets
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] <== #2 === auth_reply(proto 2 0 (0) Success) v1 (18)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - handle_auth_reply [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] returns auth_reply(proto 2 0 (0) Success) v1: 0
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - handle_auth_reply
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - renew_tickets: don't need new tickets
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_rotating_keyring renewing rotating keys  (they expired before 2025-05-13T09:42:57.347311+0000)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_rotating_keyring called too often (last: 2025-05-13T09:43:27.346964+0000)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - do_auth_single: [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] returns auth_reply(proto 2 0 (0) Success) v1: 0
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] send 3 send() to core 0 -- mon_subscribe({config=0+}) v3
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 3 do_send() from core 0 -- mon_subscribe({config=0+}) v3
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] --> #3 === mon_subscribe({config=0+}) v3 (15)
+WARN  2025-05-13 09:43:27,347 [shard 0:main] monc - renew_subs - empty
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] <== #3 === config(7 keys) v1 (62)
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals no callback set
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals crimson_seastar_cpu_cores = 0-27
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_copyfrom_max_chunk = 524288
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_debug_misdirected_ops = true
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_debug_op_order = true
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_pool_default_min_size = 1
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_pool_default_size = 1
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] monc - set_mon_vals osd_scrub_load_threshold = 2000.000000
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] osd - operator(): got config from monitor, fsid 500a2df4-3301-453f-a3a1-be11800d6c09
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - stop
+INFO  2025-05-13 09:43:27,347 [shard 0:main] monc - close
+INFO  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] mark_down() at io_stat(io_state=open, in_seq=3, out_seq=3, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0), send 1 notify_mark_down()
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got  do_set_io_state(): prv_state=open, new_state=drop, fa=N/A, set_notify_out=false, at io_stat(io_state=open, in_seq=3, out_seq=3, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 1 notify_mark_down()
+INFO  2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] closing: reset no, replace no
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] TRIGGER CLOSING, was READY
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] send 6 IOHandler::set_io_state(): new_state=CLOSING, new_io_state=drop, fa=N/A, set_notify_out=false
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 6  do_set_io_state(): prv_state=drop, new_state=drop, fa=N/A, set_notify_out=false, at io_stat(io_state=drop, in_seq=3, out_seq=3, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] send 7 IOHandler::wait_io_exit_dispatching() ...
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 7 wait_io_exit_dispatching()
+DEBUG 2025-05-13 09:43:27,347 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] send 8 IOHandler::close_io(reset=false, replace=false)
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] got 8 close_io(reset=false, replace=false)
+INFO  2025-05-13 09:43:27,348 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] do_in_dispatch(): fault at drop, io_stat(io_state=drop, in_seq=3, out_seq=3, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0) -- read eof
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] finish wait_io_exit_dispatching at io_stat(io_state=drop, in_seq=3, out_seq=3, out_pending_msgs_size=0, out_sent_msgs_size=0, need_ack=0, need_keepalive=0, need_keepalive_ack=0)
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] finish 7 IOHandler::wait_io_exit_dispatching(), io(in_seq=3, is_out_queued=false, has_out_sent=false)
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] ms - [0x60000011ce00 client.?(temp_mon_client) 127.0.0.1:0/4122202723@64058 >> mon.0 v2:127.0.0.1:40001/0] closed!
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] ms - ~SocketMessenger: temp_mon_client
+INFO  2025-05-13 09:43:27,348 [shard 0:main] osd - Configure option_name crimson_reactor_task_quota_ms with value : 0.500000
+INFO  2025-05-13 09:43:27,348 [shard 0:main] osd - Configure option_name crimson_reactor_idle_poll_time_us with value : 200
+INFO  2025-05-13 09:43:27,348 [shard 0:main] osd - get_early_config: set --thread-affinity 1 --cpuset 0-27
+DEBUG 2025-05-13 09:43:27,348 [shard 0:main] seastar - reactor::drain
+INFO  2025-05-13 09:43:27,500 seastar - Reactor backend: linux-aio
+start osd.0
+osd 0 /ceph/build/bin/crimson-osd --seastore_max_concurrent_transactions=128 --seastore_cache_lru_size=2G -i 0 -c /ceph/build/ceph.conf
+
+
+
+export PYTHONPATH=/ceph/src/pybind:/ceph/build/lib/cython_modules/lib.3:/ceph/src/python-common:$PYTHONPATH
+export LD_LIBRARY_PATH=/ceph/build/lib:$LD_LIBRARY_PATH
+export PATH=/ceph/build/bin:$PATH
+export CEPH_CONF=/ceph/build/ceph.conf
+alias cephfs-shell=/ceph/src/tools/cephfs/shell/cephfs-shell
+CEPH_DEV=1
+2057509
+Creating 32 RBD images
+NAME        PROVISIONED  USED
+fio_test_0        2 GiB   0 B
+Prefilling rbd/fio_test_0
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     19012   19031.4   1.2 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 20991   bytes/sec: 1.3 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_0        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_1        2 GiB   0 B
+Prefilling rbd/fio_test_1
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24109   24133.3   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24489.4   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_1        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_2        2 GiB   0 B
+Prefilling rbd/fio_test_2
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     21187   21102.9   1.3 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 19400.2   bytes/sec: 1.2 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_2        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_3        2 GiB   0 B
+Prefilling rbd/fio_test_3
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     23814     23838   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24398.3   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_3        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_4        2 GiB   0 B
+Prefilling rbd/fio_test_4
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24652   24676.8   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24200.1   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_4        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_5        2 GiB   0 B
+Prefilling rbd/fio_test_5
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24453   24453.2   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24217.9   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_5        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_6        2 GiB   0 B
+Prefilling rbd/fio_test_6
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24178   24202.4   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24599.8   bytes/sec: 1.5 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_6        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_7        2 GiB   0 B
+Prefilling rbd/fio_test_7
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25734   25734.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25719.7   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_7        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_8        2 GiB   0 B
+Prefilling rbd/fio_test_8
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26565   26538.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26553.4   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_8        2 GiB  2 GiB
+NAME        PROVISIONED  USED
+fio_test_9        2 GiB   0 B
+Prefilling rbd/fio_test_9
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25796   25796.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25519.4   bytes/sec: 1.6 GiB/s
+NAME        PROVISIONED  USED 
+fio_test_9        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_10        2 GiB   0 B
+Prefilling rbd/fio_test_10
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26690   26716.8   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26531.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_10        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_11        2 GiB   0 B
+Prefilling rbd/fio_test_11
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27396   27423.5   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 27124.9   bytes/sec: 1.7 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_11        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_12        2 GiB   0 B
+Prefilling rbd/fio_test_12
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27204   27204.1   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26924.3   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_12        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_13        2 GiB   0 B
+Prefilling rbd/fio_test_13
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27062   27089.2   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26968.6   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_13        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_14        2 GiB   0 B
+Prefilling rbd/fio_test_14
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26373   26399.5   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26213.5   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_14        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_15        2 GiB   0 B
+Prefilling rbd/fio_test_15
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25418   25443.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25599.1   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_15        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_16        2 GiB   0 B
+Prefilling rbd/fio_test_16
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26845     26872   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26403.6   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_16        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_17        2 GiB   0 B
+Prefilling rbd/fio_test_17
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26659   26685.8   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26489   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_17        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_18        2 GiB   0 B
+Prefilling rbd/fio_test_18
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     24772     24797   1.5 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 24452.9   bytes/sec: 1.5 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_18        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_19        2 GiB   0 B
+Prefilling rbd/fio_test_19
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26457   26483.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26339.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_19        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_20        2 GiB   0 B
+Prefilling rbd/fio_test_20
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26839   26865.9   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26596.5   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_20        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_21        2 GiB   0 B
+Prefilling rbd/fio_test_21
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25411   25411.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25699.5   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_21        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_22        2 GiB   0 B
+Prefilling rbd/fio_test_22
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27037   27064.1   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26814.1   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_22        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_23        2 GiB   0 B
+Prefilling rbd/fio_test_23
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26116   26142.2   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 25800.7   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_23        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_24        2 GiB   0 B
+Prefilling rbd/fio_test_24
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26757   26783.9   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26531.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_24        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_25        2 GiB   0 B
+Prefilling rbd/fio_test_25
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     25925   25925.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26026.1   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_25        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_26        2 GiB   0 B
+Prefilling rbd/fio_test_26
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26445   26471.6   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26489   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_26        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_27        2 GiB   0 B
+Prefilling rbd/fio_test_27
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27395   27422.5   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26770.3   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_27        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_28        2 GiB   0 B
+Prefilling rbd/fio_test_28
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27589   27616.7   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 27466   bytes/sec: 1.7 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_28        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_29        2 GiB   0 B
+Prefilling rbd/fio_test_29
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26693   26693.1   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26531.9   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_29        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_30        2 GiB   0 B
+Prefilling rbd/fio_test_30
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     27177   27204.3   1.7 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26770.3   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_30        2 GiB  2 GiB
+NAME         PROVISIONED  USED
+fio_test_31        2 GiB   0 B
+Prefilling rbd/fio_test_31
+bench  type write io_size 65536 io_threads 1 bytes 2147483648 pattern sequential
+  SEC       OPS   OPS/SEC   BYTES/SEC
+    1     26373   26399.5   1.6 GiB/s
+elapsed: 1   ops: 32768   ops/sec: 26150.7   bytes/sec: 1.6 GiB/s
+NAME         PROVISIONED  USED 
+fio_test_31        2 GiB  2 GiB
+  cluster:
+    id:     500a2df4-3301-453f-a3a1-be11800d6c09
+    health: HEALTH_WARN
+            2 pool(s) have no replicas configured
+ 
+  services:
+    mon: 1 daemons, quorum a (age 111s) [leader: a]
+    mgr: x(active, since 107s)
+    osd: 1 osds: 1 up (since 101s), 1 in (since 105s)
+ 
+  data:
+    pools:   2 pools, 129 pgs
+    objects: 14.70k objects, 57 GiB
+    usage:   57 GiB used, 7.0 TiB / 7.1 TiB avail
+    pgs:     129 active+clean
+ 
+  io:
+    client:   1.5 MiB/s rd, 1.2 GiB/s wr, 1.87k op/s rd, 1.43k op/s wr
+ 
+pool 1 '.mgr' replicated size 1 min_size 1 crush_rule 0 object_hash rjenkins pg_num 1 pgp_num 1 autoscale_mode off last_change 9 flags hashpspool,nopgchange,crimson stripe_width 0 pg_num_max 32 pg_num_min 1 application mgr read_balance_score 1.00
+pool 2 'rbd' replicated size 1 min_size 1 crush_rule 0 object_hash rjenkins pg_num 128 pgp_num 128 autoscale_mode off last_change 14 flags hashpspool,nopgchange,selfmanaged_snaps,crimson stripe_width 0 application rbd read_balance_score 1.00
+POOL_NAME     USED  OBJECTS  CLONES  COPIES  MISSING_ON_PRIMARY  UNFOUND  DEGRADED  RD_OPS      RD  WR_OPS       WR  USED COMPR  UNDER COMPR
+.mgr       449 KiB        2       0       2                   0        0         0      43  37 KiB      57  584 KiB         0 B          0 B
+rbd         57 GiB    14702       0   14702                   0        0         0   90526  72 MiB   69707   57 GiB         0 B          0 B
+
+total_objects    14704
+total_used       57 GiB
+total_avail      7.0 TiB
+total_space      7.1 TiB
+/root/bin/run_fio.sh -s -j  -w hockey -r  -a -c "0-111" -f 28-55,84-111 -p "sea_1osd_28reactor_32fio_bal_osd_rc" -x -n -d /tmp/_6aab5c07ae/osd_1_28reactor_28fio_cmp_sea_classic

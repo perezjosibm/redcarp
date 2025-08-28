@@ -1,0 +1,20 @@
+{
+  "workload": "rr",
+  "workload_name": "hockey",
+  "test_prefix": "sea_1osd_4reactor_32fio_bal_osd_rc",
+  "osd_type": "crimson",
+  "num_procs": 1,
+  "iodepth": "1 2 4 8 16 24 32 40 52 64",
+  "numjobs": "1",
+  "block_size_kb": "4k",
+  "latency_target": false,
+  "response_curve": true,
+  "test_result": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread",
+  "osd_cpu_avg": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_cpu_avg.json",
+  "osd_test_list": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_list",
+  "top_out_list": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_top_list",
+  "top_pid_list": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_pid_list",
+  "top_pid_json": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_pid.json",
+  "disk_stat": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_diskstat.json",
+  "disk_out": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_diskstat.out"
+}

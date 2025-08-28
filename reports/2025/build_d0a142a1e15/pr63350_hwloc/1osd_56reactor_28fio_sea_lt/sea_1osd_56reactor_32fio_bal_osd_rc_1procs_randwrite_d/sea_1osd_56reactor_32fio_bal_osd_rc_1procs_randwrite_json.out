@@ -1,0 +1,68 @@
+['fio_sea_1osd_56reactor_32fio_bal_osd_rc_4job_16io_4k_randwrite_p0.json']
+loading 1 .json files ...
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_4job_16io_4k_randwrite_p0.json ==
+{'clat_ms': 2.8313291012360002,
+ 'clat_stdev': 248.045122088752,
+ 'iodepth': '128',
+ 'iops': 9829.344755,
+ 'jobname': 'randwrite',
+ 'sys_cpu': 0.193235,
+ 'timestamp': '1747737615',
+ 'total_ios': 539287,
+ 'usr_cpu': 0.251917}
+Note: clat_ns has been converted to milliseconds
+Note: bw has been converted to MiBs
+ avg_cpu list has: 1 items
+Table (after aggregating OSD CPU avg data):
+{'OSD_cpu': [0.0],
+ 'OSD_mem': [0.0],
+ 'clat_ms': [2.8313291012360002],
+ 'clat_stdev': [248.045122088752],
+ 'iodepth': ['128'],
+ 'iops': [9829.344755],
+ 'sys_cpu': [0.193235],
+ 'total_ios': [539287],
+ 'usr_cpu': [0.251917]}
+ avg_cpu list has: 1 items
+Table (after aggregating FIO CPU avg data):
+{'FIO_cpu': [52.28666666666644],
+ 'FIO_mem': [0.0],
+ 'OSD_cpu': [0.0],
+ 'OSD_mem': [0.0],
+ 'clat_ms': [2.8313291012360002],
+ 'clat_stdev': [248.045122088752],
+ 'iodepth': ['128'],
+ 'iops': [9829.344755],
+ 'sys_cpu': [0.193235],
+ 'total_ios': [539287],
+ 'usr_cpu': [0.251917]}
+ Wiki table: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite
+{| class="wikitable"
+|- 
+ ! colspan="11"  | 
+        sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite
+|-
+! iodepth !! iops !! total_ios !! clat_ms !! clat_stdev !! usr_cpu !! sys_cpu !! OSD_cpu !! OSD_mem !! FIO_cpu !! FIO_mem
+|-
+ | 128  || 9829.34  || 539287.00  || 2.83  || 248.05  || 0.25  || 0.19  || 0.00  || 0.00  || 52.29  || 0.00 
+|-
+|}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & iops & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+128  & 9829.34  & 539287.00  & 2.83  & 248.05  & 0.25  & 0.19  & 0.00  & 0.00  & 52.29  & 0.00 \\
+\hline
+
+\hline
+\end{tabular}
+\caption{Performance Throughput vs Latency vs CPU util: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite.}
+\label{table:iops-lat-cpu-sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randwrite}
+\end{table}
+
+Done

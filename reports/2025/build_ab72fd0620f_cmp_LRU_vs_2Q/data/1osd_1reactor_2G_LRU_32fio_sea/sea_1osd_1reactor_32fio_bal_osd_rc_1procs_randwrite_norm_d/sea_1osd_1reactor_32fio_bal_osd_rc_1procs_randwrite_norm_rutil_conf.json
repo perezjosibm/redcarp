@@ -1,0 +1,19 @@
+{
+  "input": [
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_190149.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_190722.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_191255.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_191829.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_192403.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_192938.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_193512.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_194046.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_194620.json",
+    "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_dump_20250815_195154.json"
+  ],
+  "output": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_perf_rutil.json",
+  "type": "crimson",
+  "operator": "average",
+  "time_sequence": "_dump_(.*).json",
+  "benchmark": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm.json"
+}

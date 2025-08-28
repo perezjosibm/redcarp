@@ -1,0 +1,42 @@
+{
+  "description": "Configuration file to report the comparion between LRU and 2Q cache pin over the reactor counts in Crimson with Seastore",
+  "input": {
+    "1_reactor_LRU": {
+      "path": "data/1osd_1reactor_2G_LRU_32fio_sea",
+      "test_run": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs"
+    },
+    "1_reactor_2Q": {
+      "path": "data/1osd_1reactor_2G_2Q_32fio_sea",
+      "test_run": "sea_1osd_1reactor_32fio_bal_osd_rc_1procs"
+    },
+    "4_reactor_LRU": {
+      "path": "data/1osd_4reactor_2G_LRU_32fio_sea",
+      "test_run": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs"
+    },
+    "4_reactor_2Q": {
+      "path": "data/1osd_4reactor_2G_2Q_32fio_sea",
+      "test_run": "sea_1osd_4reactor_32fio_bal_osd_rc_1procs"
+    },
+    "8_reactor_LRU": {
+      "path": "data/1osd_8reactor_2G_LRU_32fio_sea",
+      "test_run": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs"
+    },
+    "8_reactor_2Q": {
+      "path": "data/1osd_8reactor_2G_2Q_32fio_sea",
+      "test_run": "sea_1osd_8reactor_32fio_bal_osd_rc_1procs"
+    }
+  },
+  "output": {
+    "name": "cmp_sea_LRU_vs_2Q_rc",
+    "_comment_": "This is the path where the report will be generated, from the -d option",
+    "path": "./"
+  },
+  "workload_list": [
+    "randwrite_zoned",
+    "randwrite_zipf",
+    "randwrite_norm",
+    "randread_zoned",
+    "randread_zipf",
+    "randread_norm"
+  ]
+}

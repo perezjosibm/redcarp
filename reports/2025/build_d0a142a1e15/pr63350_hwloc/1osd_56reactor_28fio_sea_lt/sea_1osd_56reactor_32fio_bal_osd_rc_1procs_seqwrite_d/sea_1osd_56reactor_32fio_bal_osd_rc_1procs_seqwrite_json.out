@@ -1,0 +1,68 @@
+['fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_14io_64k_seqwrite_p0.json']
+loading 1 .json files ...
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_1job_14io_64k_seqwrite_p0.json ==
+{'bw': 782.638,
+ 'clat_ms': 2.272492711201,
+ 'clat_stdev': 233.970643781353,
+ 'iodepth': '128',
+ 'jobname': 'write',
+ 'sys_cpu': 0.244269,
+ 'timestamp': '1747738238',
+ 'total_ios': 1771428,
+ 'usr_cpu': 0.677233}
+Note: clat_ns has been converted to milliseconds
+Note: bw has been converted to MiBs
+ avg_cpu list has: 1 items
+Table (after aggregating OSD CPU avg data):
+{'OSD_cpu': [0.0],
+ 'OSD_mem': [0.0],
+ 'bw': [782.638],
+ 'clat_ms': [2.272492711201],
+ 'clat_stdev': [233.970643781353],
+ 'iodepth': ['128'],
+ 'sys_cpu': [0.244269],
+ 'total_ios': [1771428],
+ 'usr_cpu': [0.677233]}
+ avg_cpu list has: 1 items
+Table (after aggregating FIO CPU avg data):
+{'FIO_cpu': [229.113333333336],
+ 'FIO_mem': [37.93666666666868],
+ 'OSD_cpu': [0.0],
+ 'OSD_mem': [0.0],
+ 'bw': [782.638],
+ 'clat_ms': [2.272492711201],
+ 'clat_stdev': [233.970643781353],
+ 'iodepth': ['128'],
+ 'sys_cpu': [0.244269],
+ 'total_ios': [1771428],
+ 'usr_cpu': [0.677233]}
+ Wiki table: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite
+{| class="wikitable"
+|- 
+ ! colspan="11"  | 
+        sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite
+|-
+! iodepth !! bw !! total_ios !! clat_ms !! clat_stdev !! usr_cpu !! sys_cpu !! OSD_cpu !! OSD_mem !! FIO_cpu !! FIO_mem
+|-
+ | 128  || 782.64  || 1771428.00  || 2.27  || 233.97  || 0.68  || 0.24  || 0.00  || 0.00  || 229.11  || 37.94 
+|-
+|}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & bw & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+128  & 782.64  & 1771428.00  & 2.27  & 233.97  & 0.68  & 0.24  & 0.00  & 0.00  & 229.11  & 37.94 \\
+\hline
+
+\hline
+\end{tabular}
+\caption{Performance Throughput vs Latency vs CPU util: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite.}
+\label{table:iops-lat-cpu-sea_1osd_56reactor_32fio_bal_osd_rc_1procs_seqwrite}
+\end{table}
+
+Done

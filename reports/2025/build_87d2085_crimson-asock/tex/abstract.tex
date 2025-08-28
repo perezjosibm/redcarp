@@ -1,0 +1,17 @@
+\begin{abstract} 
+  In this brief report we show the performance scaling as incrementing the number of reactors for a single OSD, 
+  for Crimson SeaStore using the following configurations:
+  \begin{itemize}
+    \item we ranged the number of Seastar reactors as 4, 8, 16 and 56. 
+    \item All configurations used a single NUMA socket.
+    \item We used the same ceph dev build from main branch (hash 87d2085) for all test runs.
+    \item We only used the balanced OSD algorithm.
+  \end{itemize}
+Our preliminary conclusions:
+  \begin{itemize}
+    \item The performance of the Crimson SeaStore on random workloads scales
+      well with the number of reactors. However, sequential workloads don't scale well beyond 16 reactors. 
+    \item We are using flamegraphs data for 4 and 8 reactors to work out attribution on the hottest code paths.
+  \end{itemize}
+\end{abstract}
+

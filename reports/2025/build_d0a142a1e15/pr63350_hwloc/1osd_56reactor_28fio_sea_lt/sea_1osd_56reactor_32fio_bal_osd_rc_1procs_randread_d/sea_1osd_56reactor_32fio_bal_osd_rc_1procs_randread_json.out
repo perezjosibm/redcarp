@@ -1,0 +1,68 @@
+['fio_sea_1osd_56reactor_32fio_bal_osd_rc_16job_16io_4k_randread_p0.json']
+loading 1 .json files ...
+Num jobs: 1
+== fio_sea_1osd_56reactor_32fio_bal_osd_rc_16job_16io_4k_randread_p0.json ==
+{'clat_ms': 0.402462708535,
+ 'clat_stdev': 62.695246563401994,
+ 'iodepth': '128',
+ 'iops': 68695.4263,
+ 'jobname': 'randread',
+ 'sys_cpu': 1.003349,
+ 'timestamp': '1747737434',
+ 'total_ios': 4112383,
+ 'usr_cpu': 1.057168}
+Note: clat_ns has been converted to milliseconds
+Note: bw has been converted to MiBs
+ avg_cpu list has: 1 items
+Table (after aggregating OSD CPU avg data):
+{'OSD_cpu': [1730.8433333333337],
+ 'OSD_mem': [1960.9999999999116],
+ 'clat_ms': [0.402462708535],
+ 'clat_stdev': [62.695246563401994],
+ 'iodepth': ['128'],
+ 'iops': [68695.4263],
+ 'sys_cpu': [1.003349],
+ 'total_ios': [4112383],
+ 'usr_cpu': [1.057168]}
+ avg_cpu list has: 1 items
+Table (after aggregating FIO CPU avg data):
+{'FIO_cpu': [290.20333333333616],
+ 'FIO_mem': [0.0],
+ 'OSD_cpu': [1730.8433333333337],
+ 'OSD_mem': [1960.9999999999116],
+ 'clat_ms': [0.402462708535],
+ 'clat_stdev': [62.695246563401994],
+ 'iodepth': ['128'],
+ 'iops': [68695.4263],
+ 'sys_cpu': [1.003349],
+ 'total_ios': [4112383],
+ 'usr_cpu': [1.057168]}
+ Wiki table: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randread
+{| class="wikitable"
+|- 
+ ! colspan="11"  | 
+        sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randread
+|-
+! iodepth !! iops !! total_ios !! clat_ms !! clat_stdev !! usr_cpu !! sys_cpu !! OSD_cpu !! OSD_mem !! FIO_cpu !! FIO_mem
+|-
+ | 128  || 68695.43  || 4112383.00  || 0.40  || 62.70  || 1.06  || 1.00  || 1730.84  || 1961.00  || 290.20  || 0.00 
+|-
+|}
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}[t]{*{11 }{|c|}}
+\hline 
+iodepth & iops & total\_ios & clat\_ms & clat\_stdev & usr\_cpu & sys\_cpu & OSD\_cpu & OSD\_mem & FIO\_cpu & FIO\_mem\\
+\hline
+128  & 68695.43  & 4112383.00  & 0.40  & 62.70  & 1.06  & 1.00  & 1730.84  & 1961.00  & 290.20  & 0.00 \\
+\hline
+
+\hline
+\end{tabular}
+\caption{Performance Throughput vs Latency vs CPU util: sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randread.}
+\label{table:iops-lat-cpu-sea_1osd_56reactor_32fio_bal_osd_rc_1procs_randread}
+\end{table}
+
+Done

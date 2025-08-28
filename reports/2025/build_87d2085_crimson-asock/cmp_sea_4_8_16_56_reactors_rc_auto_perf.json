@@ -1,0 +1,32 @@
+
+{
+  "description": "Comparison of performance metrics for different reactor configurations in the Sea storage system.",
+  "metrics": {
+    "latency": {
+      "unit": "ms",
+      "description": "Average latency for operations"
+    },
+    "throughput": {
+      "unit": "IOPS",
+      "description": "Input/Output Operations Per Second"
+    },
+    "cpu_usage": {
+      "unit": "%",
+      "description": "CPU usage percentage during operation"
+    }
+  },
+  "comparisons": [
+    {
+      "name": "4_reactor_vs_8_reactor",
+      "metrics": ["latency", "throughput", "cpu_usage"]
+    },
+    {
+      "name": "8_reactor_vs_16_reactor",
+      "metrics": ["latency", "throughput", "cpu_usage"]
+    },
+    {
+      "name": "16_reactor_vs_56_reactor",
+      "metrics": ["latency", "throughput", "cpu_usage"]
+    }
+  ]
+}
