@@ -1,5 +1,19 @@
+# **Crimson Seastore: performance comparison cache pin algorithms LRU vs. 2Q** -- progress report
+
 ---
-abstract: |
+<!-- ![image](figures/ceph_362px.png) -->
+<img src="figures/ceph_362px.png" width="148">
+
+
+| **Author**: |
+
+  José Juan Palacios Pérez\
+  Ceph IBM,\
+  Manchester UK
+  date: 2025-08-28
+
+| **Abstract:**
+
   In this brief report we show the performance comparisonm between the
   two Seastore cache pinboard algorithms, namely LRU and 2Q. We used the
   following configurations:
@@ -27,14 +41,6 @@ abstract: |
 
   - As expected from previous tests, Crimson SeaStore on random
     workloads scales well with the number of reactors.
-author:
-- |
-  José Juan Palacios Pérez\
-  Ceph IBM,\
-  Manchester UK
-date: 2025-08-28
-title: "**Crimson Seastore: performance comparison cache pin algorithms
-  LRU vs. 2Q** -- progress report"
 ---
 
 - [Summary performance scaling Seastore LRU vs
@@ -45,14 +51,12 @@ title: "**Crimson Seastore: performance comparison cache pin algorithms
   - [randread_zoned](#randread_zoned){#toc-randread_zoned}
   - [randread_zipf](#randread_zipf){#toc-randread_zipf}
   - [randread_norm](#randread_norm){#toc-randread_norm}
+- [Comparison of LRU and 2Q via flamegraphs](#comparison-of-lru-and-2q-via-flamegraphs){#toc-comparison-of-lru-and-2q-via-flamegraphs}
 
-::::: titlepage
-:::: minipage
-::: center
-![image](ceph_362px.png){width="30%"}
-:::
-::::
-:::::
+
+<!-- ::::: titlepage -->
+<!-- :::: minipage -->
+<!-- ::: center -->
 
 # Summary performance scaling Seastore LRU vs 2Q
 
@@ -98,17 +102,17 @@ LBA) according to the parameters chosen, in our case as follows:
 - 2% of accesses should be to the next 40%.
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randwrite_zoned](../figures/cmp_sea_LRU_vs_2Q_rc_randwrite_zoned_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_zoned
+randwrite_zoned](figures/cmp_sea_LRU_vs_2Q_rc_randwrite_zoned_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_zoned
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randwrite_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randwrite_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randwrite_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zoned, 1 reactor</figcaption>
@@ -117,11 +121,11 @@ randwrite_zoned, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randwrite_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randwrite_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randwrite_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zoned, 4 reactor</figcaption>
@@ -130,11 +134,11 @@ randwrite_zoned, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randwrite_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randwrite_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randwrite_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randwrite_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zoned, 8 reactor</figcaption>
@@ -158,17 +162,17 @@ This random distribution was chosen to exercise IO as follows:
     Total                                             524288
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randwrite_zipf](../figures/cmp_sea_LRU_vs_2Q_rc_randwrite_zipf_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_zipf
+randwrite_zipf](figures/cmp_sea_LRU_vs_2Q_rc_randwrite_zipf_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_zipf
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randwrite_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randwrite_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randwrite_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zipf, 1 reactor</figcaption>
@@ -177,11 +181,11 @@ randwrite_zipf, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randwrite_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randwrite_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randwrite_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zipf, 4 reactor</figcaption>
@@ -190,11 +194,11 @@ randwrite_zipf, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randwrite_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randwrite_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randwrite_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randwrite_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_zipf, 8 reactor</figcaption>
@@ -206,17 +210,17 @@ This is the traditional Gaussian distribution, using a generated mean
 and standard deviation 0.6.
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randwrite_norm](../figures/cmp_sea_LRU_vs_2Q_rc_randwrite_norm_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_norm
+randwrite_norm](figures/cmp_sea_LRU_vs_2Q_rc_randwrite_norm_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randwrite_norm
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randwrite_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randwrite_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randwrite_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_norm, 1 reactor</figcaption>
@@ -225,11 +229,11 @@ randwrite_norm, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randwrite_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randwrite_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randwrite_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_norm, 4 reactor</figcaption>
@@ -238,11 +242,11 @@ randwrite_norm, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randwrite_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randwrite_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randwrite_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randwrite_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randwrite_norm, 8 reactor</figcaption>
@@ -251,17 +255,17 @@ randwrite_norm, 8 reactor</figcaption>
 ## randread_zoned
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randread_zoned](../figures/cmp_sea_LRU_vs_2Q_rc_randread_zoned_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_zoned
+randread_zoned](figures/cmp_sea_LRU_vs_2Q_rc_randread_zoned_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_zoned
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randread_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randread_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randread_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zoned, 1 reactor</figcaption>
@@ -270,11 +274,11 @@ randread_zoned, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randread_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randread_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randread_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zoned, 4 reactor</figcaption>
@@ -283,11 +287,11 @@ randread_zoned, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randread_zoned">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randread_zoned_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randread_zoned_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randread_zoned_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zoned, 8 reactor</figcaption>
@@ -296,17 +300,17 @@ randread_zoned, 8 reactor</figcaption>
 ## randread_zipf
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randread_zipf](../figures/cmp_sea_LRU_vs_2Q_rc_randread_zipf_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_zipf
+randread_zipf](figures/cmp_sea_LRU_vs_2Q_rc_randread_zipf_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_zipf
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randread_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randread_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randread_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zipf, 1 reactor</figcaption>
@@ -315,11 +319,11 @@ randread_zipf, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randread_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randread_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randread_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zipf, 4 reactor</figcaption>
@@ -328,11 +332,11 @@ randread_zipf, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randread_zipf">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randread_zipf_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randread_zipf_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randread_zipf_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_zipf, 8 reactor</figcaption>
@@ -341,17 +345,17 @@ randread_zipf, 8 reactor</figcaption>
 ## randread_norm
 
 ![cmp-sea-LRU-vs-2Q-rc -
-randread_norm](../figures/cmp_sea_LRU_vs_2Q_rc_randread_norm_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_norm
+randread_norm](figures/cmp_sea_LRU_vs_2Q_rc_randread_norm_iops_vs_lat.png){#fig:cmp_sea_LRU_vs_2Q_rc_randread_norm
 width="80%"}
 
 <figure id="figure:1-reactor-cpu-randread_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_LRU_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_LRU_randread_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_1reactor_2Q_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_1reactor_2Q_randread_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_norm, 1 reactor</figcaption>
@@ -360,11 +364,11 @@ randread_norm, 1 reactor</figcaption>
 <figure id="figure:4-reactor-cpu-randread_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_LRU_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_LRU_randread_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_4reactor_2Q_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_4reactor_2Q_randread_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_norm, 4 reactor</figcaption>
@@ -373,11 +377,11 @@ randread_norm, 4 reactor</figcaption>
 <figure id="figure:8-reactor-cpu-randread_norm">
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_LRU_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_LRU_randread_norm_top_cpu.png" />
 </div>
 <div class="minipage">
 <img
-src="../figures/OSD_sea_1osd_8reactor_2Q_randread_norm_top_cpu.png" />
+src="figures/OSD_sea_1osd_8reactor_2Q_randread_norm_top_cpu.png" />
 </div>
 <figcaption>Top CPU utilization - LRU (left) vs 2Q (right) -
 randread_norm, 8 reactor</figcaption>
@@ -385,3 +389,244 @@ randread_norm, 8 reactor</figcaption>
 
 [^1]: We do not show the memory utilisation since its mostly remains
     constant, and does not add much to the analysis.
+
+## Comparison of LRU and 2Q via flamegraphs
+
+This section compares the performance of LRU and 2Q cache pinboard algorithms in a single OSD visualized through flamegraphs generated from different workloads and I/O depths.
+
+| randwrite_zoned (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randwrite_zoned_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randwrite_zoned_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randwrite_zoned_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randwrite_zoned_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randwrite_zoned_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randwrite_zoned_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randwrite_zoned_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randwrite_zoned_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randwrite_zoned_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randwrite_zoned_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zoned_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) |
+
+| randwrite_zoned (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randwrite_zoned_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randwrite_zoned_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randwrite_zoned_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randwrite_zoned_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randwrite_zoned_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randwrite_zoned_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randwrite_zoned_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randwrite_zoned_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randwrite_zoned_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randwrite_zoned_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zoned_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) |
+
+| randwrite_zoned (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randwrite_zoned_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randwrite_zoned_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randwrite_zoned_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randwrite_zoned_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randwrite_zoned_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randwrite_zoned_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randwrite_zoned_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randwrite_zoned_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randwrite_zoned_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randwrite_zoned_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zoned_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zoned_p0.fg.svg) |
+
+| randwrite_zipf (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randwrite_zipf_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randwrite_zipf_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randwrite_zipf_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randwrite_zipf_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randwrite_zipf_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randwrite_zipf_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randwrite_zipf_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randwrite_zipf_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randwrite_zipf_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randwrite_zipf_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_1reactor_randwrite_zipf_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) |
+
+| randwrite_zipf (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randwrite_zipf_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randwrite_zipf_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randwrite_zipf_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randwrite_zipf_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randwrite_zipf_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randwrite_zipf_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randwrite_zipf_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randwrite_zipf_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randwrite_zipf_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randwrite_zipf_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_4reactor_randwrite_zipf_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) |
+
+| randwrite_zipf (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randwrite_zipf_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randwrite_zipf_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randwrite_zipf_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randwrite_zipf_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randwrite_zipf_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randwrite_zipf_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randwrite_zipf_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randwrite_zipf_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randwrite_zipf_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randwrite_zipf_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) | [sea_1osd_8reactor_randwrite_zipf_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_zipf_p0.fg.svg) |
+
+| randwrite_norm (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randwrite_norm_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randwrite_norm_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randwrite_norm_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randwrite_norm_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randwrite_norm_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randwrite_norm_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randwrite_norm_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randwrite_norm_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randwrite_norm_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randwrite_norm_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_1reactor_randwrite_norm_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) |
+
+| randwrite_norm (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randwrite_norm_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randwrite_norm_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randwrite_norm_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randwrite_norm_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randwrite_norm_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randwrite_norm_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randwrite_norm_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randwrite_norm_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randwrite_norm_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randwrite_norm_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_4reactor_randwrite_norm_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) |
+
+| randwrite_norm (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randwrite_norm_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randwrite_norm_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randwrite_norm_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randwrite_norm_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randwrite_norm_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randwrite_norm_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randwrite_norm_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randwrite_norm_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randwrite_norm_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randwrite_norm_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randwrite_norm_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randwrite_norm_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randwrite_norm_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randwrite_norm_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randwrite_norm_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randwrite_norm_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randwrite_norm_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randwrite_norm_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randwrite_norm_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) | [sea_1osd_8reactor_randwrite_norm_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randwrite_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randwrite_norm_p0.fg.svg) |
+
+| randread_zoned (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randread_zoned_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randread_zoned_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randread_zoned_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randread_zoned_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randread_zoned_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randread_zoned_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randread_zoned_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randread_zoned_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randread_zoned_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randread_zoned_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_1reactor_randread_zoned_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) |
+
+| randread_zoned (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randread_zoned_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randread_zoned_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randread_zoned_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randread_zoned_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randread_zoned_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randread_zoned_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randread_zoned_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randread_zoned_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randread_zoned_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randread_zoned_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_4reactor_randread_zoned_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) |
+
+| randread_zoned (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randread_zoned_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zoned_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randread_zoned_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zoned_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randread_zoned_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zoned_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randread_zoned_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zoned_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randread_zoned_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zoned_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randread_zoned_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zoned_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randread_zoned_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zoned_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randread_zoned_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zoned_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randread_zoned_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zoned_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randread_zoned_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) | [sea_1osd_8reactor_randread_zoned_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zoned_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zoned_p0.fg.svg) |
+
+| randread_zipf (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randread_zipf_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randread_zipf_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randread_zipf_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randread_zipf_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randread_zipf_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randread_zipf_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randread_zipf_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randread_zipf_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randread_zipf_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randread_zipf_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_1reactor_randread_zipf_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) |
+
+| randread_zipf (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randread_zipf_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randread_zipf_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randread_zipf_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randread_zipf_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randread_zipf_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randread_zipf_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randread_zipf_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randread_zipf_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randread_zipf_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randread_zipf_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_4reactor_randread_zipf_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) |
+
+| randread_zipf (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randread_zipf_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_zipf_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randread_zipf_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_zipf_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randread_zipf_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_zipf_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randread_zipf_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_zipf_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randread_zipf_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_zipf_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randread_zipf_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_zipf_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randread_zipf_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_zipf_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randread_zipf_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_zipf_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randread_zipf_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_zipf_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randread_zipf_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) | [sea_1osd_8reactor_randread_zipf_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_zipf_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_zipf_p0.fg.svg) |
+
+| randread_norm (1 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_1reactor_randread_norm_1](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_1](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) |
+| 2 | [sea_1osd_1reactor_randread_norm_2](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_2](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) |
+| 4 | [sea_1osd_1reactor_randread_norm_4](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_4](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) |
+| 8 | [sea_1osd_1reactor_randread_norm_8](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_8](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) |
+| 16 | [sea_1osd_1reactor_randread_norm_16](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_16](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) |
+| 24 | [sea_1osd_1reactor_randread_norm_24](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_24](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) |
+| 32 | [sea_1osd_1reactor_randread_norm_32](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_32](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) |
+| 40 | [sea_1osd_1reactor_randread_norm_40](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_40](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) |
+| 52 | [sea_1osd_1reactor_randread_norm_52](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_52](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) |
+| 64 | [sea_1osd_1reactor_randread_norm_64](data/1osd_1reactor_2G_LRU_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) | [sea_1osd_1reactor_randread_norm_64](data/1osd_1reactor_2G_2Q_32fio_sea/sea_1osd_1reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_1reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) |
+
+| randread_norm (4 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_4reactor_randread_norm_1](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_1](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) |
+| 2 | [sea_1osd_4reactor_randread_norm_2](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_2](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) |
+| 4 | [sea_1osd_4reactor_randread_norm_4](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_4](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) |
+| 8 | [sea_1osd_4reactor_randread_norm_8](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_8](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) |
+| 16 | [sea_1osd_4reactor_randread_norm_16](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_16](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) |
+| 24 | [sea_1osd_4reactor_randread_norm_24](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_24](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) |
+| 32 | [sea_1osd_4reactor_randread_norm_32](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_32](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) |
+| 40 | [sea_1osd_4reactor_randread_norm_40](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_40](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) |
+| 52 | [sea_1osd_4reactor_randread_norm_52](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_52](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) |
+| 64 | [sea_1osd_4reactor_randread_norm_64](data/1osd_4reactor_2G_LRU_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) | [sea_1osd_4reactor_randread_norm_64](data/1osd_4reactor_2G_2Q_32fio_sea/sea_1osd_4reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_4reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) |
+
+| randread_norm (8 reactor) | LRU | 2Q |
+|-------------------------|-----|----|
+| 1 | [sea_1osd_8reactor_randread_norm_1](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_1](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_1io_4k_randread_norm_p0.fg.svg) |
+| 2 | [sea_1osd_8reactor_randread_norm_2](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_2](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_2io_4k_randread_norm_p0.fg.svg) |
+| 4 | [sea_1osd_8reactor_randread_norm_4](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_4](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_4io_4k_randread_norm_p0.fg.svg) |
+| 8 | [sea_1osd_8reactor_randread_norm_8](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_8](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_8io_4k_randread_norm_p0.fg.svg) |
+| 16 | [sea_1osd_8reactor_randread_norm_16](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_16](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_16io_4k_randread_norm_p0.fg.svg) |
+| 24 | [sea_1osd_8reactor_randread_norm_24](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_24](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_24io_4k_randread_norm_p0.fg.svg) |
+| 32 | [sea_1osd_8reactor_randread_norm_32](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_32](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_32io_4k_randread_norm_p0.fg.svg) |
+| 40 | [sea_1osd_8reactor_randread_norm_40](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_40](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_40io_4k_randread_norm_p0.fg.svg) |
+| 52 | [sea_1osd_8reactor_randread_norm_52](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_52](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_52io_4k_randread_norm_p0.fg.svg) |
+| 64 | [sea_1osd_8reactor_randread_norm_64](data/1osd_8reactor_2G_LRU_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) | [sea_1osd_8reactor_randread_norm_64](data/1osd_8reactor_2G_2Q_32fio_sea/sea_1osd_8reactor_32fio_bal_osd_rc_1procs_randread_norm_d/sea_1osd_8reactor_32fio_bal_osd_rc_1job_64io_4k_randread_norm_p0.fg.svg) |
+
+
+
